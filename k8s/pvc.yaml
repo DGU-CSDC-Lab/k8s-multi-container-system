@@ -1,0 +1,13 @@
+# pvc가 로컬 디렉토리를 직접 마운트 합니다.
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: protogcn-pvc
+  namespace: argo
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: standard
+  resources:
+    requests:
+      storage: 10Gi
