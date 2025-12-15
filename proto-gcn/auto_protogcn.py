@@ -135,6 +135,32 @@ def _ms(start_t: float, end_t: float) -> int:
     return int(round((end_t - start_t) * 1000))
 
 
+def train_once_cpu(cfg_path: Path, log_dir: Path, extra_flags=None):
+    """CPU 모드 단일 프로세스 학습 실행"""
+    if extra_flags is None:
+        extra_flags = ["--validate", "--test-last", "--test-best"]
+    log_dir.mkdir(parents=True, exist_ok=True)
+    log_path = log_dir / "train_stdout.log"
+    
+    # 환경 변수 설정
+    env = os.environ.copy()
+    env["PYTHONPATH"] = "."
+    env["MKL_SERVICE_FORCE_INTEL"] = "1"
+    # 분산 학습 관련 환경 변수 설정
+    env["RANK"] = "0"
+    env["WORLD_SIZE"] = "1"
+    env["LOCAL_RANK"] = "0"
+    env["MASTER_ADDR"] = "localhost"
+    env["MASTER_PORT"] = "12345"
+    
+    cmd = ["python", "tools/train.py", str(cfg_path)] + extra_flags
+    t0 = time.perf_counter()
+    out = run_cmd(cmd, log_path=log_path, env=env)
+    t1 = time.perf_counter()
+    train_ms = _ms(t0, t1)
+    return out, log_path, train_ms, 0  # val_ms는 0으로 설정
+
+
 def train_once(dist_train_sh: str, cfg_path: Path, gpus: int, log_dir: Path, extra_flags=None):
     """학습 실행 + 전체 소요시간(ms) 반환. 검증 시간은 로그에서 추정."""
     if extra_flags is None:
@@ -383,7 +409,11 @@ def main():
             # --- Train ---
             print(f"\n==== TRAIN [{run_name}] ====")
             try:
-                train_stdout, train_log_path, train_ms, val_ms = train_once(DIST_TRAIN_SH, temp_cfg, GPUS, log_dir)
+                # CPU 모드인지 확인
+                if os.environ.get("CUDA_VISIBLE_DEVICES") == "":
+                    train_stdout, train_log_path, train_ms, val_ms = train_once_cpu(temp_cfg, log_dir)
+                else:
+                    train_stdout, train_log_path, train_ms, val_ms = train_once(DIST_TRAIN_SH, temp_cfg, GPUS, log_dir)
             except Exception as e:
                 print(f"[ERROR] Training failed for {run_name}: {e}")
                 summary_rows.append(dict(

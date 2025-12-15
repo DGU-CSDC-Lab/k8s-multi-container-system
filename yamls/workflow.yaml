@@ -25,7 +25,7 @@ spec:
         arguments:
           parameters:
             - name: pkl_path
-              value: "/data/proto-gcn/data/*.pkl"  # Ubuntu 환경에 맞게 수정
+              value: "/data/data/*/*.pkl"  # 하위 폴더의 pkl 파일들
             - name: output_dir
               value: "/data/results/{{workflow.parameters.user}}"
 
@@ -35,18 +35,33 @@ spec:
       - name: pkl_path
       - name: output_dir
     container:
-      image: python:3.9-slim
-      command: ["sh", "-c"]
-      args: ["cd /data/proto-gcn && python auto_protogcn.py"]
-      imagePullPolicy: IfNotPresent
+      image: local-proto-gcn:v7
+      command: ["python", "auto_protogcn.py"]
+      imagePullPolicy: Never
+      securityContext:
+        privileged: true
       env:
       - name: DATASET_PKL
         value: "{{inputs.parameters.pkl_path}}"
       - name: RUNS_ROOT
         value: "{{inputs.parameters.output_dir}}"
+      - name: CUDA_VISIBLE_DEVICES
+        value: ""
       volumeMounts:
       - name: shared-volume
         mountPath: /data
+      - name: dev
+        mountPath: /dev
+      - name: nvidia-libs
+        mountPath: /usr/local/nvidia
+        readOnly: true
+    volumes:
+    - name: dev
+      hostPath:
+        path: /dev
+    - name: nvidia-libs
+      hostPath:
+        path: /usr/lib/x86_64-linux-gnu
 
   # 3. CSV 병합
   - name: merge-results

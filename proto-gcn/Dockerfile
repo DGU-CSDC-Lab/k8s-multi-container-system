@@ -2,10 +2,10 @@ FROM nvidia/cuda:11.3.1-cudnn8-runtime-ubuntu20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install system dependencies + python3.8
+# Install system dependencies + python3.8 + OpenCV dependencies
 RUN apt-get update && apt-get install -y \
     python3.8 python3.8-dev python3-pip \
-    ffmpeg libsm6 libxext6 libgl1-mesa-glx \
+    ffmpeg libsm6 libxext6 libgl1-mesa-glx libglib2.0-0 \
     git curl unzip nano \
     && apt-get clean
 
@@ -30,9 +30,10 @@ WORKDIR /workspace
 RUN pip install -r requirements.txt
 
 # rebuild할 때 pip install 레이어는 그대로 캐시됌
-COPY configs/ /workspace/configs/
-COPY tools/ /workspace/tools/
-COPY auto_protogcn.py /workspace/auto_protogcn.py
+COPY . /workspace/
+
+# Proto-GCN 패키지 설치
+RUN pip install -e .
 
 
 # Python 실행은 고정

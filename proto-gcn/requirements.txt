@@ -6,14 +6,14 @@ mmdet==2.23.0
 mmpose==0.24.0
 moviepy
 numpy>=1.19.5
-opencv-contrib-python
-opencv-python
+opencv-python-headless
 importlib_metadata
 pymemcache
 scipy
 torch>=1.5
 tqdm
 pandas
+xlsxwriter
 
 # 추가 필수
 pyyaml
