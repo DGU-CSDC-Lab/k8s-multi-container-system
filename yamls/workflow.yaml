@@ -35,30 +35,53 @@ spec:
       - name: pkl_path
       - name: output_dir
     container:
-      image: local-proto-gcn:v7
-      command: ["python", "auto_protogcn.py"]
-      imagePullPolicy: Never
-      securityContext:
-        privileged: true
+      image: python:3.8-slim
+      command: ["sh", "-c"]
+      args: ["cd /data && pip install -r requirements.txt && pip install -e . && python auto_protogcn.py"]
+      resources:
+        limits:
+          nvidia.com/gpu: 1
+        requests:
+          nvidia.com/gpu: 1
       env:
       - name: DATASET_PKL
         value: "{{inputs.parameters.pkl_path}}"
       - name: RUNS_ROOT
         value: "{{inputs.parameters.output_dir}}"
-      - name: CUDA_VISIBLE_DEVICES
-        value: ""
+      - name: NVIDIA_VISIBLE_DEVICES
+        value: "0"
+      - name: RANK
+        value: "0"
+      - name: WORLD_SIZE
+        value: "1"
+      - name: LOCAL_RANK
+        value: "0"
+      - name: MASTER_ADDR
+        value: "localhost"
+      - name: MASTER_PORT
+        value: "29500"
       volumeMounts:
       - name: shared-volume
         mountPath: /data
-      - name: dev
-        mountPath: /dev
+      - name: dev-nvidia0
+        mountPath: /dev/nvidia0
+      - name: dev-nvidiactl
+        mountPath: /dev/nvidiactl
+      - name: dev-nvidia-uvm
+        mountPath: /dev/nvidia-uvm
       - name: nvidia-libs
-        mountPath: /usr/local/nvidia
+        mountPath: /usr/lib/x86_64-linux-gnu
         readOnly: true
     volumes:
-    - name: dev
+    - name: dev-nvidia0
       hostPath:
-        path: /dev
+        path: /dev/nvidia0
+    - name: dev-nvidiactl
+      hostPath:
+        path: /dev/nvidiactl
+    - name: dev-nvidia-uvm
+      hostPath:
+        path: /dev/nvidia-uvm
     - name: nvidia-libs
       hostPath:
         path: /usr/lib/x86_64-linux-gnu
