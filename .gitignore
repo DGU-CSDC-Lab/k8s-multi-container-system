@@ -1,2 +1,4 @@
 app/__pycache__
 data/
+
+node_modules/
