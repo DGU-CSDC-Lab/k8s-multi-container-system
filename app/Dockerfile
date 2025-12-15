@@ -1,4 +1,11 @@
-# Dockerfile (app/Dockerfile)
+# Multi-stage build for React + FastAPI
+FROM node:18-alpine as frontend
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
 
 FROM python:3.9-slim
 
@@ -12,13 +19,12 @@ RUN apt-get update && apt-get install -y curl unzip \
 
 WORKDIR /app
 
-COPY app/requirements.txt .
-COPY k8s/workflow.yaml .
-
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY app/ .
+COPY server.py .
+COPY --from=frontend /app/dist ./static
 
 EXPOSE 8000
 
-CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "8000"]

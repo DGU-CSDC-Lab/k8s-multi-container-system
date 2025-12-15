@@ -1,8 +1,5 @@
-from fastapi import FastAPI, Request, UploadFile, File, Form
-from fastapi.responses import HTMLResponse, FileResponse, PlainTextResponse
-from fastapi.staticfiles import StaticFiles
-import subprocess
-from fastapi.templating import Jinja2Templates
+from fastapi import FastAPI, UploadFile, File, Form
+from fastapi.responses import PlainTextResponse
 from fastapi.middleware.cors import CORSMiddleware
 import os
 import asyncio
@@ -12,7 +9,7 @@ app = FastAPI()
 # CORS 허용
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # 보안 위해 실제 운영에선 도메인 지정
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -27,14 +24,6 @@ WORKFLOW_PATH = "/home/eunji/project/k8s-multi-container-system/k8s/workflow.yam
 
 # --- kubeconfig 환경변수 설정 ---
 os.environ["KUBECONFIG"] = "/home/eunji/.kube/config"
-
-# --- Static/Template 세팅 ---
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
-
-@app.get("/", response_class=HTMLResponse)
-def index(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
 
 @app.post("/upload-multi")
 async def upload_multi(user: str = Form(...), files: list[UploadFile] = File(...)):
