@@ -25,9 +25,9 @@ spec:
         arguments:
           parameters:
             - name: pkl_path
-              value: "/run/desktop/mnt/host/wsl/protogcn/uploads/{{workflow.parameters.user}}/*.pkl"  # data 추가
+              value: "/data/proto-gcn/data/*.pkl"  # Ubuntu 환경에 맞게 수정
             - name: output_dir
-              value: "/run/desktop/mnt/host/wsl/protogcn/results/{{workflow.parameters.user}}"
+              value: "/data/results/{{workflow.parameters.user}}"
 
   - name: train-one
     inputs:
@@ -35,8 +35,9 @@ spec:
       - name: pkl_path
       - name: output_dir
     container:
-      image: bianbbc87/csdc-proto-gcn:latest
-      command: ["python", "auto_protogcn.py"]
+      image: python:3.9-slim
+      command: ["sh", "-c"]
+      args: ["cd /data/proto-gcn && python auto_protogcn.py"]
       imagePullPolicy: IfNotPresent
       env:
       - name: DATASET_PKL
@@ -45,7 +46,7 @@ spec:
         value: "{{inputs.parameters.output_dir}}"
       volumeMounts:
       - name: shared-volume
-        mountPath: /run/desktop/mnt/host/wsl/protogcn
+        mountPath: /data
 
   # 3. CSV 병합
   - name: merge-results
@@ -54,4 +55,4 @@ spec:
       command: ["python", "/app/index.py"]
       volumeMounts:
       - name: shared-volume
-        mountPath: /run/desktop/mnt/host/wsl/protogcn
+        mountPath: /data
