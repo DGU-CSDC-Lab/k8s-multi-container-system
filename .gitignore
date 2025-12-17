@@ -2,3 +2,7 @@ app/__pycache__
 data/
 
 app/node_modules
+
+venv/
+*/venv/
+proto-gcn/venv/

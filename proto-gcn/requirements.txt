@@ -6,24 +6,10 @@ mmdet==2.23.0
 mmpose==0.24.0
 moviepy
 numpy>=1.19.5
-opencv-python-headless
+opencv-contrib-python
+opencv-python
 importlib_metadata
 pymemcache
 scipy
 torch>=1.5
 tqdm
-pandas
-xlsxwriter
-
-# 추가 필수
-pyyaml
-addict
-yapf
-termcolor
-packaging
-
-# 선택적 유틸
-albumentations
-seaborn
-tensorboard
-ipython

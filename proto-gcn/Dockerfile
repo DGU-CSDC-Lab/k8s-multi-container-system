@@ -35,6 +35,10 @@ COPY . /workspace/
 # Proto-GCN 패키지 설치
 RUN pip install -e .
 
+# GLX 파일 제거 (NVIDIA runtime hook 충돌 방지)
+RUN rm -f /usr/lib/x86_64-linux-gnu/libGLX_indirect.so.0 \
+    && rm -f /usr/lib/x86_64-linux-gnu/libGLX.so.0
+
 
 # Python 실행은 고정
 ENTRYPOINT ["python"]

@@ -20,7 +20,7 @@ model = dict(
         in_channels=384,
         weight=0.2))
 dataset_type = 'PoseDataset'
-ann_file = '/data/nturgbd/ntu60_3danno.pkl'
+ann_file = 'data/nturgbd/ntu60_3danno.pkl'
 train_pipeline = [
     dict(type='PreNormalize3D', align_spine=False),
     dict(type='RandomRot', theta=0.2),
@@ -52,7 +52,7 @@ data = dict(
     test_dataloader=dict(videos_per_gpu=1),
     train=dict(
         type='PoseDataset',
-        ann_file='/data/nturgbd/ntu60_3danno.pkl',
+        ann_file='data/nturgbd/ntu60_3danno.pkl',
         pipeline=[
             dict(type='PreNormalize3D', align_spine=False),
             dict(type='RandomRot', theta=0.2),
@@ -65,7 +65,7 @@ data = dict(
         split='xsub_train'),
     val=dict(
         type='PoseDataset',
-        ann_file='/data/nturgbd/ntu60_3danno.pkl',
+        ann_file='data/nturgbd/ntu60_3danno.pkl',
         pipeline=[
             dict(type='PreNormalize3D', align_spine=False),
             dict(type='GenSkeFeat', feats=['j']),
@@ -77,7 +77,7 @@ data = dict(
         split='xsub_val'),
     test=dict(
         type='PoseDataset',
-        ann_file='/data/nturgbd/ntu60_3danno.pkl',
+        ann_file='data/nturgbd/ntu60_3danno.pkl',
         pipeline=[
             dict(type='PreNormalize3D', align_spine=False),
             dict(type='GenSkeFeat', feats=['j']),
