@@ -14,3 +14,4 @@ pyarrow>=10.0.0
 scipy
 torch>=1.5
 tqdm
+yapf==0.32.0

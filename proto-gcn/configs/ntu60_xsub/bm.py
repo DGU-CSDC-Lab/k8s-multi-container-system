@@ -1,6 +1,8 @@
+import os
+
 modality = 'bm'
 graph = 'nturgb+d'
-work_dir = f'./work_dirs/ntu60_xsub/bm'
+work_dir = os.getenv('WORK_DIR', './work_dirs/ntu60_xsub/bm')
 
 model = dict(
     type='RecognizerGCN',
@@ -12,7 +14,7 @@ model = dict(
     cls_head=dict(type='SimpleHead', joint_cfg='nturgb+d', num_classes=60, in_channels=384, weight=0.3))
 
 dataset_type = 'PoseDataset'
-ann_file = 'data/nturgbd/ntu60_3danno.pkl'
+ann_file = os.getenv('ANN_FILE', 'data/nturgbd/ntu60_3danno.pkl')
 train_pipeline = [
     dict(type='PreNormalize3D', align_spine=False),
     dict(type='RandomRot', theta=0.2),
@@ -41,8 +43,8 @@ test_pipeline = [
     dict(type='ToTensor', keys=['keypoint'])
 ]
 data = dict(
-    videos_per_gpu=32,
-    workers_per_gpu=4,
+    videos_per_gpu=1,  # 최소값으로 설정
+    workers_per_gpu=1,  # worker도 최소화
     test_dataloader=dict(videos_per_gpu=1),
     train=dict(type=dataset_type, ann_file=ann_file, pipeline=train_pipeline, split='xsub_train'),
     val=dict(type=dataset_type, ann_file=ann_file, pipeline=val_pipeline, split='xsub_val'),

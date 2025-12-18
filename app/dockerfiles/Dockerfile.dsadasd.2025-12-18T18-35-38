@@ -1,0 +1,9 @@
+FROM 
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN ㄴㅇㄹㄹㅇ
+
+WORKDIR /workspace
+COPY . /workspace/
+RUN pip install -e .
