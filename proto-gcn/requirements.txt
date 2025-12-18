@@ -10,6 +10,7 @@ opencv-contrib-python
 opencv-python
 importlib_metadata
 pymemcache
+pyarrow>=10.0.0
 scipy
 torch>=1.5
 tqdm

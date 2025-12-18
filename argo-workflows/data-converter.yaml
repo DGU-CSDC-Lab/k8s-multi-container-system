@@ -1,0 +1,36 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: data-converter-
+spec:
+  entrypoint: convert-data
+  volumes:
+  - name: data-pv
+    persistentVolumeClaim:
+      claimName: proto-gcn-data
+  templates:
+  - name: convert-data
+    container:
+      image: python:3.9-slim
+      command: [python]
+      source: |
+        import pickle
+        import pyarrow as pa
+        import pyarrow.parquet as pq
+        
+        # Load pkl
+        with open('/data/ntu60_3danno.pkl', 'rb') as f:
+            data = pickle.load(f)
+        
+        # Convert to Arrow Table
+        table = pa.table({
+            'split': [data['split']],
+            'annotations': [data['annotations']]
+        })
+        
+        # Save as Parquet
+        pq.write_table(table, '/pv-data/ntu60_3danno.parquet')
+        print("Conversion completed")
+      volumeMounts:
+      - name: data-pv
+        mountPath: /pv-data

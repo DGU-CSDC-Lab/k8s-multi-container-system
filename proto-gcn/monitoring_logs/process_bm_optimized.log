@@ -1,0 +1,903 @@
+2025-12-18 17:04:53
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     323871  0.0  0.0  18704 10360 pts/0    R+   17:04   0:00 python tools/train.py proto-gcn/configs/ntu60_xsub/bm_arrow_arrow.py --validate --test-last --test-best
+---
+2025-12-18 17:27:36
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     339643  0.0  0.0  15596 11364 pts/1    R+   17:27   0:00 python tools/train.py proto-gcn/configs/ntu60_xsub/bm_arrow_arrow.py --validate --test-last --test-best
+---
+2025-12-18 17:27:41
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     339738  0.0  0.0  15596 11288 pts/1    R+   17:27   0:00 python tools/train.py proto-gcn/configs/ntu60_xsub/bm_arrow_arrow.py --validate --test-last --test-best
+---
+2025-12-18 17:27:54
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     340095  0.0  0.0  12668  9988 pts/1    R+   17:27   0:00 python tools/train.py proto-gcn/configs/ntu60_xsub/bm_arrow_arrow.py --validate --test-last --test-best
+---
+2025-12-18 17:28:29
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     340900  100  0.0  12668 10024 pts/1    R+   17:28   0:00 python tools/train.py proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 17:29:04
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     341791  100  0.0  12524  9800 pts/1    R+   17:29   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 17:29:09
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     341791  411 56.4 49586896 18478592 pts/1 Sl+ 17:29   0:20 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 17:34:25
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     347144  0.0  0.0  16620 11760 pts/2    R+   17:34   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 17:34:34
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     347360  0.0  0.0  10768  7856 pts/2    R+   17:34   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 17:34:39
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     347360  203 35.3 36383448 11571756 pts/2 Sl+ 17:34   0:10 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 18:01:35
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     374814  0.0  0.0  15596 11260 pts/1    R+   18:01   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 18:01:41
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     374920  0.0  0.0  10768  7824 pts/1    D+   18:01   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 18:01:46
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     374920  119 14.3 23626380 4700820 pts/1 Sl+ 18:01   0:06 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 18:01:51
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     374920  110 34.9 35175052 11447956 pts/1 Sl+ 18:01   0:11 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 18:01:56
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     374920  108 51.8 42531468 16948404 pts/1 Sl+ 18:01   0:16 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 18:02:01
+root        1450  0.0  0.0 108108  9436 ?        Ssl  12월16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     374920  107 70.4 50940556 23062920 pts/1 Sl+ 18:01   0:21 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+eunji     375489 95.4  0.2 126552 76036 pts/2    R+   18:02   0:00 /home/eunji/anaconda3/bin/python /home/eunji/anaconda3/bin/conda shell.posix activate base
+---
+2025-12-18 18:46:38
+root        1506  0.0  0.0 113568 23300 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji       8250  0.0  0.0  15284 10516 pts/0    R+   18:46   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 18:46:46
+root        1506  0.0  0.0 113568 23300 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji       8295  0.0  0.0  10672  7648 pts/0    R+   18:46   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 18:52:10
+root        1506  0.0  0.0 113568 23300 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji       9528  0.0  0.0  12052  9228 pts/0    R+   18:52   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 18:57:58
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      13397  0.0  0.0  15284 10532 pts/0    R+   18:57   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 18:58:09
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      13492  0.0  0.0  11796  9148 pts/0    R+   18:58   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 18:59:51
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      14432  0.0  0.0  11308  8428 pts/0    R+   18:59   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:03:49
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      16234  0.0  0.0   9872  7024 pts/0    D+   19:03   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:18:56
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      23129  0.0  0.0  12052  9252 pts/0    R+   19:18   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:19:01
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      23129  124 26.6 110931324 8709836 pts/0 Sl+ 19:18   0:06 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:19:06
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      23129  112 64.8 121690624 21233208 pts/0 Sl+ 19:18   0:11 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:19:11
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      23129  108 87.5 133492224 28650716 pts/0 Sl+ 19:18   0:16 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:19:16
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      23129  106 87.3 139273728 28565996 pts/0 Sl+ 19:18   0:21 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:20
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  0.0  0.0  11280  8428 pts/0    D+   19:36   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:25
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  117 10.7 55731460 3526292 pts/0 Sl+ 19:36   0:05 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:30
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  108 27.8 61014276 9105532 pts/0 Sl+ 19:36   0:10 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:35
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  106 45.1 66506120 14768940 pts/0 Sl+ 19:36   0:15 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:40
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  104 62.1 74926472 20329536 pts/0 Sl+ 19:36   0:20 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:45
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 79.0 80450952 25872584 pts/0 Sl+ 19:36   0:26 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:46
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 81.8 80450952 26769180 pts/0 Sl+ 19:36   0:26 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:46
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 82.2 80450952 26924296 pts/0 Sl+ 19:36   0:27 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:47
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 83.9 84137352 27479980 pts/0 Sl+ 19:36   0:27 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:47
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 84.6 84137352 27685516 pts/0 Sl+ 19:36   0:27 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:47
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 85.1 84137352 27870900 pts/0 Sl+ 19:36   0:27 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:48
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 86.2 84137352 28208836 pts/0 Sl+ 19:36   0:28 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:48
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 86.8 84137352 28430240 pts/0 Sl+ 19:36   0:28 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:48
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 87.4 84137352 28605908 pts/0 Sl+ 19:36   0:28 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:49
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 87.9 88331656 28787956 pts/0 Sl+ 19:36   0:29 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:49
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 87.9 88331656 28787340 pts/0 Sl+ 19:36   0:29 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:50
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 87.7 88331656 28702448 pts/0 Sl+ 19:36   0:30 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:50
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 87.6 88331656 28674348 pts/0 Sl+ 19:36   0:30 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:50
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 87.5 88331656 28650808 pts/0 Sl+ 19:36   0:30 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:50
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 87.6 88331656 28684136 pts/0 Sl+ 19:36   0:30 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:50
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 87.6 88331656 28688048 pts/0 Sl+ 19:36   0:31 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:51
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 87.6 88331656 28675744 pts/0 Sl+ 19:36   0:31 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:51
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 87.6 88331656 28692368 pts/0 Sl+ 19:36   0:31 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:51
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 87.6 90953096 28685060 pts/0 Sl+ 19:36   0:31 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:52
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 87.7 90953096 28702084 pts/0 Sl+ 19:36   0:32 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:52
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  103 87.4 90953096 28626004 pts/0 Sl+ 19:36   0:32 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:52
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 87.3 90953096 28592176 pts/0 Sl+ 19:36   0:32 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:53
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 87.7 90953096 28719260 pts/0 Sl+ 19:36   0:33 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:53
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 87.5 90953096 28657264 pts/0 Sl+ 19:36   0:33 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:54
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 87.7 90953096 28706224 pts/0 Sl+ 19:36   0:34 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:55
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 87.7 94126472 28707056 pts/0 Sl+ 19:36   0:35 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:55
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 87.8 94126472 28740356 pts/0 Sl+ 19:36   0:35 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:55
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 88.5 94126472 28964744 pts/0 Sl+ 19:36   0:35 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:56
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 88.8 94126472 29055188 pts/0 Sl+ 19:36   0:36 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:57
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 88.9 97796488 29118708 pts/0 Sl+ 19:36   0:38 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:58
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 89.0 97796488 29144316 pts/0 Sl+ 19:36   0:38 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:59
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 89.1 100417928 29176696 pts/0 Sl+ 19:36   0:39 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:36:59
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 89.5 100417928 29298928 pts/0 Sl+ 19:36   0:40 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:37:00
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 88.9 100417928 29092980 pts/0 Sl+ 19:36   0:40 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:37:00
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      30832  102 89.6 100417928 29320812 pts/0 Sl+ 19:36   0:41 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:40:54
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33314  0.0  0.0  15284 10584 pts/0    R+   19:40   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:08
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  0.0  0.0   9416  6260 pts/0    R+   19:41   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:13
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  116 10.3 56272124 3391972 pts/0 Sl+ 19:41   0:05 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+eunji      33697  104  0.1  65644 54804 pts/1    R+   19:41   0:00 /home/eunji/anaconda3/bin/python /home/eunji/anaconda3/bin/conda shell.bash hook
+---
+2025-12-18 19:41:18
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  108 27.1 61543676 8898832 pts/0 Sl+ 19:41   0:10 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:23
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  105 44.1 66814336 14447584 pts/0 Sl+ 19:41   0:15 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:28
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  104 61.3 77860224 20065464 pts/0 Sl+ 19:41   0:20 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:32
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  103 73.9 81014144 24204868 pts/0 Sl+ 19:41   0:24 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:32
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  103 75.4 83881344 24674656 pts/0 Sl+ 19:41   0:25 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:33
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  103 76.8 83881344 25134780 pts/0 Sl+ 19:41   0:25 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:33
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  103 78.1 83881344 25584876 pts/0 Sl+ 19:41   0:25 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:33
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  103 79.6 83881344 26044348 pts/0 Sl+ 19:41   0:26 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:34
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  103 81.0 83881344 26512888 pts/0 Sl+ 19:41   0:26 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:34
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  103 81.8 83881344 26774920 pts/0 Sl+ 19:41   0:26 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:34
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  103 82.5 86509952 27003356 pts/0 Sl+ 19:41   0:27 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:35
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  103 84.0 86509952 27499952 pts/0 Sl+ 19:41   0:27 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:40
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  102 89.9 91770240 29429104 pts/0 Sl+ 19:41   0:32 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:41:45
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      33443  102 90.2 98089344 29539020 pts/0 Sl+ 19:41   0:37 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:46:05
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36290  0.0  0.0   9872  6836 pts/0    R+   19:46   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:46:50
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  0.0  0.0  13316 10416 pts/0    R+   19:46   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:46:55
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  128 12.8 55745792 4218456 pts/0 Sl+ 19:46   0:06 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:47:00
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  114 30.2 61022464 9885288 pts/0 Sl+ 19:46   0:11 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:47:05
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  109 47.6 68905348 15574908 pts/0 Sl+ 19:46   0:16 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:47:10
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  107 65.0 74686852 21279212 pts/0 Sl+ 19:46   0:21 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:47:15
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  105 82.2 81534340 26896000 pts/0 Sl+ 19:46   0:26 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:47:15
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  105 82.9 84155780 27135944 pts/0 Sl+ 19:46   0:26 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:47:15
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  105 83.4 84155780 27319600 pts/0 Sl+ 19:46   0:26 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:47:15
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  105 84.1 84155780 27518764 pts/0 Sl+ 19:46   0:27 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:47:16
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  105 84.6 84155780 27687348 pts/0 Sl+ 19:46   0:27 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:47:16
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  105 85.1 84155780 27865120 pts/0 Sl+ 19:46   0:27 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:47:16
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  105 85.7 84155780 28052596 pts/0 Sl+ 19:46   0:27 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:47:21
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  104 90.2 89931140 29543976 pts/0 Sl+ 19:46   0:32 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:47:26
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      36662  104 89.8 96257412 29406860 pts/0 Sl+ 19:46   0:37 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:49:06
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      38578  0.0  0.0   9872  7096 pts/0    R+   19:49   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:50:54
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      39301  0.0  0.0  12052  9340 pts/0    R+   19:50   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:51:21
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      39607  0.0  0.0  12052  9264 pts/0    R+   19:51   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:52:56
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40370  0.0  0.0  12052  9236 pts/0    R+   19:52   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:52:59
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40461  0.0  0.0  12052  9168 pts/0    R+   19:52   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:53:11
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40633  0.0  0.0  12052  9152 pts/0    R+   19:53   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:53:32
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40856  0.0  0.0  11796  9084 pts/0    R+   19:53   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:53:37
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40856  126 13.4 19444868 4413520 pts/0 Sl+ 19:53   0:06 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:53:42
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40856  113 31.2 27341956 10222244 pts/0 Sl+ 19:53   0:11 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:53:47
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40856  109 48.7 32821512 15963228 pts/0 Sl+ 19:53   0:16 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:53:52
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40856  106 66.4 38078728 21746404 pts/0 Sl+ 19:53   0:21 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:53:57
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40856  108 13.8 39631312 4522072 pts/0 Dl+ 19:53   0:27 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:54:02
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40856  105 22.3 52357684 7303384 pts/0 Sl+ 19:53   0:32 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:54:07
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40856  105 39.9 54986292 13085472 pts/0 Sl+ 19:53   0:37 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:54:12
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40856  104 57.7 60789300 18893776 pts/0 Sl+ 19:53   0:42 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:54:17
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40856  104 75.6 60796468 24736212 pts/0 Sl+ 19:53   0:47 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:54:22
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40856  103 76.3 61445100 24965948 pts/0 Sl+ 19:53   0:51 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:54:27
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40856 96.8 11.4 61740108 3731880 pts/0 Sl+ 19:53   0:53 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+eunji      41443  4.8  0.0  14064 11148 pts/0    S+   19:54   0:00 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.semaphore_tracker import main;main(62)
+eunji      41444  102 10.6 19283640 3486248 pts/0 Sl+ 19:54   0:04 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=63, pipe_handle=67) --multiprocessing-fork
+eunji      41445  102 10.5 19277572 3459800 pts/0 Sl+ 19:54   0:04 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=63, pipe_handle=70) --multiprocessing-fork
+eunji      41446  103 10.6 19805888 3493468 pts/0 Sl+ 19:54   0:04 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=63, pipe_handle=73) --multiprocessing-fork
+eunji      41447  104 10.5 19287744 3454404 pts/0 Sl+ 19:54   0:04 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=63, pipe_handle=76) --multiprocessing-fork
+---
+2025-12-18 19:54:32
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      40856 88.8  2.5 61740108 822968 pts/0 Sl+  19:53   0:53 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+eunji      41443  2.2  0.0  14064  5628 pts/0    S+   19:54   0:00 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.semaphore_tracker import main;main(62)
+eunji      41444  100 23.2 24559288 7612000 pts/0 Sl+ 19:54   0:09 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=63, pipe_handle=67) --multiprocessing-fork
+eunji      41445  101 23.3 24554244 7628324 pts/0 Sl+ 19:54   0:09 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=63, pipe_handle=70) --multiprocessing-fork
+eunji      41446  101 23.4 25076416 7664444 pts/0 Sl+ 19:54   0:09 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=63, pipe_handle=73) --multiprocessing-fork
+eunji      41447  102 23.0 24554176 7530152 pts/0 Sl+ 19:54   0:09 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=63, pipe_handle=76) --multiprocessing-fork
+---
+2025-12-18 19:59:05
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      44352  100  0.0  12444  9684 pts/1    R+   19:59   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:59:10
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      44352  117 10.3 18049312 3397340 pts/1 Sl+ 19:59   0:05 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:59:15
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      44352  109 27.7 23325984 9065320 pts/1 Sl+ 19:59   0:10 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:59:20
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      44352  109 17.4 26862044 5725212 pts/1 Dl+ 19:59   0:16 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:59:25
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      44352  105 23.3 35010732 7635872 pts/1 Sl+ 19:59   0:21 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:59:31
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      44352  104 41.2 43413676 13487992 pts/1 Sl+ 19:59   0:26 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 19:59:36
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      44352  100 11.9 42592804 3918508 pts/1 Sl+ 19:59   0:30 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+eunji      44911 15.1  0.0  14064 11252 pts/1    S+   19:59   0:00 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.semaphore_tracker import main;main(63)
+eunji      44912 93.3  0.7 3700552 237980 pts/1  R+   19:59   0:00 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=64, pipe_handle=68) --multiprocessing-fork
+eunji      44913 96.2  0.6 3685528 209808 pts/1  R+   19:59   0:00 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=64, pipe_handle=71) --multiprocessing-fork
+eunji      44914  100  0.4 3673572 148524 pts/1  R+   19:59   0:00 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=64, pipe_handle=74) --multiprocessing-fork
+eunji      44917  100  0.3 3658440 115860 pts/1  R+   19:59   0:00 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=64, pipe_handle=77) --multiprocessing-fork
+---
+2025-12-18 19:59:41
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      44352 86.5 11.9 42592804 3912432 pts/1 Sl+ 19:59   0:30 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+eunji      44911  0.9  0.0  14064 11252 pts/1    S+   19:59   0:00 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.semaphore_tracker import main;main(63)
+eunji      44912  111 14.9 17897752 4906044 pts/1 Sl+ 19:59   0:05 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=64, pipe_handle=68) --multiprocessing-fork
+eunji      44913  110 15.1 17901852 4948136 pts/1 Sl+ 19:59   0:05 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=64, pipe_handle=71) --multiprocessing-fork
+eunji      44914  117 14.9 17889556 4877716 pts/1 Sl+ 19:59   0:06 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=64, pipe_handle=74) --multiprocessing-fork
+eunji      44917  120 14.9 17899868 4887172 pts/1 Sl+ 19:59   0:06 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=64, pipe_handle=77) --multiprocessing-fork
+---
+2025-12-18 19:59:46
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      44352 75.8  1.2 42592804 403424 pts/1 Sl+  19:59   0:30 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+eunji      44911  0.4  0.0  14064  3400 pts/1    S+   19:59   0:00 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.semaphore_tracker import main;main(63)
+eunji      44912  105 24.4 23691676 7990860 pts/1 Sl+ 19:59   0:10 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=64, pipe_handle=68) --multiprocessing-fork
+eunji      44913  104 24.6 23172512 8063752 pts/1 Sl+ 19:59   0:10 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=64, pipe_handle=71) --multiprocessing-fork
+eunji      44914  108 25.0 23698840 8185796 pts/1 Sl+ 19:59   0:11 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=64, pipe_handle=74) --multiprocessing-fork
+eunji      44917  109 25.0 23176540 8204744 pts/1 Sl+ 19:59   0:11 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=64, pipe_handle=77) --multiprocessing-fork
+---
+2025-12-18 20:01:33
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      46797  0.0  0.0  10268  7164 pts/0    R+   20:01   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:01:38
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      46797  116 10.5 18053412 3438000 pts/0 Sl+ 20:01   0:05 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:01:43
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      46797  108 27.4 23328036 8972712 pts/0 Sl+ 20:01   0:10 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:01:48
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      46797  105 30.0 26451492 9825912 pts/0 Rl+ 20:01   0:15 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:01:53
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      46797  104 22.1 37634240 7248732 pts/0 Sl+ 20:01   0:20 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:01:58
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      46797  103 39.9 40274112 13074628 pts/0 Sl+ 20:01   0:25 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:02:03
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      46797 99.2 12.1 43694448 3986676 pts/0 Sl+ 20:01   0:29 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:02:08
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      46797 99.4 29.9 46340464 9787380 pts/0 Sl+ 20:01   0:34 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:02:13
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      46797 99.5 47.6 52107632 15605544 pts/0 Sl+ 20:01   0:39 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:03:38
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  0.0  0.0  12052  9164 pts/0    R+   20:03   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:03:43
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  126 12.4 17914136 4070404 pts/0 Sl+ 20:03   0:06 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:03:48
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  113 29.7 23266588 9737576 pts/0 Sl+ 20:03   0:11 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:03:53
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  109  6.9 28650152 2268692 pts/0 Rl+ 20:03   0:16 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:03:58
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  107 25.8 38164668 8467776 pts/0 Sl+ 20:03   0:21 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:04:03
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  106 43.2 46045372 14165592 pts/0 Sl+ 20:03   0:26 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:04:08
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  103 15.4 48942440 5049020 pts/0 Sl+ 20:03   0:31 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:04:13
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  102 32.7 54738280 10730520 pts/0 Sl+ 20:03   0:36 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:04:18
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  106 46.0 57227420 15068320 pts/0 Rl+ 20:03   0:42 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:04:23
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  161 47.7 64533912 15617284 pts/0 Sl+ 20:03   1:12 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:04:28
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  209 47.7 64533912 15617328 pts/0 Rl+ 20:03   1:45 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:04:33
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  249 47.7 64534064 15617388 pts/0 Rl+ 20:03   2:17 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:04:38
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  285 47.7 64534064 15617388 pts/0 Sl+ 20:03   2:51 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:04:43
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  304 47.7 64547560 15631880 pts/0 Sl+ 20:03   3:18 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:04:48
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  288 61.1 71173760 19999260 pts/0 Sl+ 20:03   3:22 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:04:53
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  276 78.6 74843776 25744240 pts/0 Sl+ 20:03   3:27 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:04:58
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      48022  299 80.4 73460456 26307224 pts/0 Rl+ 20:03   4:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:06:49
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  0.0  0.0  11280  8396 pts/0    R+   20:06   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:06:54
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  124 12.0 17990176 3949940 pts/0 Sl+ 20:06   0:06 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:06:59
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  111 29.5 23772704 9665624 pts/0 Sl+ 20:06   0:11 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:07:04
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  110  7.9 29016576 2592180 pts/0 Rl+ 20:06   0:16 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:07:09
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  107 26.6 38088876 8723124 pts/0 Sl+ 20:06   0:21 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:07:14
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  106 44.3 43338924 14522100 pts/0 Sl+ 20:06   0:26 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:07:19
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  102 15.7 43409244 5165256 pts/0 Sl+ 20:06   0:30 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:07:24
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  101 33.4 46063452 10931864 pts/0 Sl+ 20:06   0:35 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:07:29
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  105 47.5 50093800 15571172 pts/0 Rl+ 20:06   0:42 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:07:34
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  166 47.6 55940148 15602580 pts/0 Sl+ 20:06   1:15 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:07:39
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  217 47.6 55940148 15602644 pts/0 Rl+ 20:06   1:49 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:07:44
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  258 47.6 55940148 15602644 pts/0 Rl+ 20:06   2:22 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:07:49
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  292 47.6 55940148 15602652 pts/0 Rl+ 20:06   2:56 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:07:54
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  303 47.7 55953712 15617028 pts/0 Sl+ 20:06   3:17 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:07:59
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  288 64.0 63665352 20958284 pts/0 Sl+ 20:06   3:22 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:08:04
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  275 81.4 69432520 26643804 pts/0 Sl+ 20:06   3:27 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:08:09
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  309 80.3 68049200 26294360 pts/0 Rl+ 20:06   4:08 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:08:14
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  319 80.3 68049504 26294664 pts/0 Rl+ 20:06   4:32 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:08:19
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  340 80.3 68049504 26294664 pts/0 Sl+ 20:06   5:07 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:08:24
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  357 80.3 68049504 26294664 pts/0 Rl+ 20:06   5:40 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:08:29
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  373 80.3 68049504 26294664 pts/0 Rl+ 20:06   6:14 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:08:34
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  386 80.3 68049504 26294664 pts/0 Rl+ 20:06   6:48 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:08:39
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  390 80.3 68049504 26294664 pts/0 Rl+ 20:06   7:10 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:08:44
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  407 80.3 68049504 26294664 pts/0 Sl+ 20:06   7:50 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:08:49
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  412 80.3 68049504 26294664 pts/0 Rl+ 20:06   8:16 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:08:54
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  421 80.3 68049504 26294664 pts/0 Sl+ 20:06   8:49 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:08:59
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  429 80.3 68049504 26294640 pts/0 Rl+ 20:06   9:21 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:09:04
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  437 80.3 68049504 26294640 pts/0 Sl+ 20:06   9:53 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:09:09
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  445 80.3 68049504 26294640 pts/0 Rl+ 20:06  10:26 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:09:14
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  448 80.3 68049504 26294640 pts/0 Rl+ 20:06  10:53 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:09:19
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  453 80.3 68049504 26294312 pts/0 Sl+ 20:06  11:22 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:09:24
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  460 80.3 68049504 26294312 pts/0 Rl+ 20:06  11:56 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:09:29
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  466 80.3 68049504 26294312 pts/0 Rl+ 20:06  12:29 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:09:34
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  472 80.3 68049504 26294312 pts/0 Rl+ 20:06  13:02 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:09:39
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  478 80.3 68049504 26294312 pts/0 Rl+ 20:06  13:36 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:09:44
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  476 80.3 68049504 26294312 pts/0 Sl+ 20:06  13:58 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:09:49
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  488 80.3 68049504 26294312 pts/0 Rl+ 20:06  14:43 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:09:55
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  480 84.2 72078840 27581240 pts/0 Sl+ 20:06  14:52 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:10:00
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  470 87.8 81526264 28726800 pts/0 Sl+ 20:06  14:57 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:10:05
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      49730  460 90.2 87293432 29512296 pts/0 Sl+ 20:06  15:02 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:13:34
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  0.0  0.0   9872  6744 pts/0    R+   20:13   0:00 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:13:39
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  116 10.3 17842452 3380848 pts/0 Sl+ 20:13   0:05 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:13:44
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  108 27.4 23334176 8981284 pts/0 Sl+ 20:13   0:10 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:13:49
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  106 36.9 26696516 12081800 pts/0 Dl+ 20:13   0:16 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:13:54
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  103 21.8 37646276 7154692 pts/0 Sl+ 20:13   0:20 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:13:59
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  102 39.3 40267716 12868840 pts/0 Sl+ 20:13   0:25 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:14:04
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  100 12.0 41576412 3937268 pts/0 Sl+ 20:13   0:30 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:14:09
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565 96.2 23.9 48218996 7835404 pts/0 Sl+ 20:13   0:33 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:14:14
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565 96.8 41.3 54517620 13530332 pts/0 Sl+ 20:13   0:38 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:14:19
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565 95.6 13.0 54528832 4255336 pts/0 Sl+ 20:13   0:43 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:14:24
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565 96.0 30.5 59802432 9996472 pts/0 Sl+ 20:13   0:48 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:14:29
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565 96.4 48.1 59802432 15769800 pts/0 Sl+ 20:13   0:53 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:14:34
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  159 47.6 61270288 15582956 pts/0 Rl+ 20:13   1:36 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:14:39
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  223 47.6 61270456 15583040 pts/0 Rl+ 20:13   2:26 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:14:44
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  279 47.6 61270456 15583084 pts/0 Rl+ 20:13   3:16 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:14:49
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  327 47.6 61270612 15583200 pts/0 Rl+ 20:13   4:06 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:14:54
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  369 47.6 61270612 15583268 pts/0 Rl+ 20:13   4:56 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:14:59
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  406 47.6 61270612 15583328 pts/0 Rl+ 20:13   5:47 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:15:04
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  418 47.7 61301888 15614524 pts/0 Sl+ 20:13   6:18 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:15:09
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  447 47.7 61301888 15614524 pts/0 Rl+ 20:13   7:07 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:15:14
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  475 47.7 61301888 15614524 pts/0 Rl+ 20:13   7:57 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:15:19
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  500 47.7 61301888 15614524 pts/0 Rl+ 20:13   8:47 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:15:24
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  522 47.7 61301888 15614524 pts/0 Rl+ 20:13   9:37 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:15:29
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  543 47.7 61301888 15614524 pts/0 Rl+ 20:13  10:28 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
+2025-12-18 20:15:34
+root        1506  0.0  0.0 113568    12 ?        Ssl  18:43   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji      53565  562 47.7 61301888 15614524 pts/0 Rl+ 20:13  11:18 python tools/train.py /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/configs/ntu60_xsub/bm_arrow.py --validate --test-last --test-best
+---
