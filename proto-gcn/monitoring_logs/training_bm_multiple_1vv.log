@@ -1,0 +1,197 @@
+2025-12-19 00:14:45,063 - protogcn - INFO - Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.7.11 (default, Jul 27 2021, 14:32:16) [GCC 7.5.0]
+CUDA available: True
+GPU 0: NVIDIA GeForce RTX 3080
+CUDA_HOME: None
+GCC: gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+PyTorch: 1.11.0
+PyTorch compiling details: PyTorch built with:
+  - GCC 7.3
+  - C++ Version: 201402
+  - Intel(R) oneAPI Math Kernel Library Version 2021.4-Product Build 20210904 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v2.5.2 (Git Hash a9302535553c73243c632ad3c4c80beec3d19a1e)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX2
+  - CUDA Runtime 11.3
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_61,code=sm_61;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_37,code=compute_37
+  - CuDNN 8.2
+  - Magma 2.5.2
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.3, CUDNN_VERSION=8.2.0, CXX_COMPILER=/opt/rh/devtoolset-7/root/usr/bin/c++, CXX_FLAGS= -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -Wno-unused-local-typedefs -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.11.0, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=OFF, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, 
+
+TorchVision: 0.12.0
+OpenCV: 4.12.0
+MMCV: 1.5.0
+MMCV Compiler: GCC 7.3
+MMCV CUDA Compiler: 11.3
+protogcn: 0.1.0+306b539
+------------------------------------------------------------
+
+2025-12-19 00:14:45,210 - protogcn - INFO - Config: modality = 'bm'
+graph = 'nturgb+d'
+work_dir = './work_dirs/ntu60_xsub/bm'
+model = dict(
+    type='RecognizerGCN',
+    backbone=dict(
+        type='ProtoGCN',
+        num_prototype=50,
+        tcn_ms_cfg=[(3, 1), (3, 2), (3, 3), (3, 4), ('max', 3), '1x1'],
+        graph_cfg=dict(
+            layout='nturgb+d',
+            mode='random',
+            num_filter=8,
+            init_off=0.04,
+            init_std=0.02)),
+    cls_head=dict(
+        type='SimpleHead',
+        joint_cfg='nturgb+d',
+        num_classes=60,
+        in_channels=384,
+        weight=0.3))
+dataset_type = 'PoseDataset'
+ann_file = 'data/nturgbd/ntu60_3danno.pkl'
+train_pipeline = [
+    dict(type='PreNormalize3D', align_spine=False),
+    dict(type='RandomRot', theta=0.2),
+    dict(type='Spatial_Flip', dataset='nturgb+d', p=0.5),
+    dict(type='GenSkeFeat', feats=['bm']),
+    dict(type='UniformSampleDecode', clip_len=100),
+    dict(type='FormatGCNInput'),
+    dict(type='Collect', keys=['keypoint', 'label'], meta_keys=[]),
+    dict(type='ToTensor', keys=['keypoint'])
+]
+val_pipeline = [
+    dict(type='PreNormalize3D', align_spine=False),
+    dict(type='GenSkeFeat', feats=['bm']),
+    dict(type='UniformSampleDecode', clip_len=100, num_clips=1),
+    dict(type='FormatGCNInput'),
+    dict(type='Collect', keys=['keypoint', 'label'], meta_keys=[]),
+    dict(type='ToTensor', keys=['keypoint'])
+]
+test_pipeline = [
+    dict(type='PreNormalize3D', align_spine=False),
+    dict(type='GenSkeFeat', feats=['bm']),
+    dict(type='UniformSampleDecode', clip_len=100, num_clips=10),
+    dict(type='FormatGCNInput'),
+    dict(type='Collect', keys=['keypoint', 'label'], meta_keys=[]),
+    dict(type='ToTensor', keys=['keypoint'])
+]
+data = dict(
+    videos_per_gpu=32,
+    workers_per_gpu=4,
+    test_dataloader=dict(videos_per_gpu=1),
+    train=dict(
+        type='PoseDataset',
+        ann_file='data/nturgbd/ntu60_3danno.pkl',
+        pipeline=[
+            dict(type='PreNormalize3D', align_spine=False),
+            dict(type='RandomRot', theta=0.2),
+            dict(type='Spatial_Flip', dataset='nturgb+d', p=0.5),
+            dict(type='GenSkeFeat', feats=['bm']),
+            dict(type='UniformSampleDecode', clip_len=100),
+            dict(type='FormatGCNInput'),
+            dict(type='Collect', keys=['keypoint', 'label'], meta_keys=[]),
+            dict(type='ToTensor', keys=['keypoint'])
+        ],
+        split='xsub_train'),
+    val=dict(
+        type='PoseDataset',
+        ann_file='data/nturgbd/ntu60_3danno.pkl',
+        pipeline=[
+            dict(type='PreNormalize3D', align_spine=False),
+            dict(type='GenSkeFeat', feats=['bm']),
+            dict(type='UniformSampleDecode', clip_len=100, num_clips=1),
+            dict(type='FormatGCNInput'),
+            dict(type='Collect', keys=['keypoint', 'label'], meta_keys=[]),
+            dict(type='ToTensor', keys=['keypoint'])
+        ],
+        split='xsub_val'),
+    test=dict(
+        type='PoseDataset',
+        ann_file='data/nturgbd/ntu60_3danno.pkl',
+        pipeline=[
+            dict(type='PreNormalize3D', align_spine=False),
+            dict(type='GenSkeFeat', feats=['bm']),
+            dict(type='UniformSampleDecode', clip_len=100, num_clips=10),
+            dict(type='FormatGCNInput'),
+            dict(type='Collect', keys=['keypoint', 'label'], meta_keys=[]),
+            dict(type='ToTensor', keys=['keypoint'])
+        ],
+        split='xsub_val'))
+optimizer = dict(
+    type='SGD', lr=0.05, momentum=0.9, weight_decay=0.0005, nesterov=True)
+optimizer_config = dict(grad_clip=None)
+lr_config = dict(policy='CosineAnnealing', min_lr=0, by_epoch=False)
+total_epochs = 5
+checkpoint_config = dict(interval=1)
+evaluation = dict(interval=1, metrics=['top_k_accuracy'])
+log_config = dict(interval=100, hooks=[dict(type='TextLoggerHook')])
+dist_params = dict(backend='nccl')
+gpu_ids = range(0, 1)
+resume_from = './work_dirs/ntu60_xsub/bm/latest.pth'
+
+2025-12-19 00:14:45,210 - protogcn - INFO - Set random seed to 1482851723, deterministic: False
+2025-12-19 00:14:48,608 - protogcn - INFO - 40091 videos remain after valid thresholding
+2025-12-19 00:14:54,405 - protogcn - INFO - 16487 videos remain after valid thresholding
+2025-12-19 00:14:54,413 - protogcn - INFO - load checkpoint from local path: ./work_dirs/ntu60_xsub/bm/latest.pth
+2025-12-19 00:14:54,649 - protogcn - WARNING - The model and loaded state dict do not match exactly
+
+size mismatch for backbone.prn.query_matrix.weight: copying a param with shape torch.Size([100, 384]) from checkpoint, the shape in current model is torch.Size([50, 384]).
+size mismatch for backbone.prn.memory_matrix.weight: copying a param with shape torch.Size([384, 100]) from checkpoint, the shape in current model is torch.Size([384, 50]).
+2025-12-19 00:14:54,708 - protogcn - INFO - resumed epoch 102, iter 255612
+2025-12-19 00:14:54,709 - protogcn - INFO - Start running, host: eunji@eunji-OMEN-30L-Desktop-GT13-0xxx, work_dir: /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/work_dirs/ntu60_xsub/bm
+2025-12-19 00:14:54,709 - protogcn - INFO - Hooks will be executed in the following order:
+before_run:
+(VERY_HIGH   ) CosineAnnealingLrUpdaterHook       
+(NORMAL      ) CheckpointHook                     
+(NORMAL      ) DistEvalHook                       
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_train_epoch:
+(VERY_HIGH   ) CosineAnnealingLrUpdaterHook       
+(NORMAL      ) DistSamplerSeedHook                
+(NORMAL      ) DistEvalHook                       
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_train_iter:
+(VERY_HIGH   ) CosineAnnealingLrUpdaterHook       
+(NORMAL      ) DistEvalHook                       
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_train_iter:
+(ABOVE_NORMAL) OptimizerHook                      
+(NORMAL      ) CheckpointHook                     
+(NORMAL      ) DistEvalHook                       
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+after_train_epoch:
+(NORMAL      ) CheckpointHook                     
+(NORMAL      ) DistEvalHook                       
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_val_epoch:
+(NORMAL      ) DistSamplerSeedHook                
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_val_iter:
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_val_iter:
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_val_epoch:
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+after_run:
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+2025-12-19 00:14:54,709 - protogcn - INFO - workflow: [('train', 1)], max: 5 epochs
+2025-12-19 00:14:54,710 - protogcn - INFO - Checkpoints will be saved to /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/work_dirs/ntu60_xsub/bm by HardDiskBackend.
+2025-12-19 00:15:00,821 - protogcn - INFO - 16487 videos remain after valid thresholding
+[                                                  ] 0/16487, elapsed: 0s, ETA:

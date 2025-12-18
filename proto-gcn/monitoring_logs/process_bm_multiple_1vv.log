@@ -1,0 +1,34 @@
+2025-12-19 00:14:43
+root        1506  0.0  0.0 113568    12 ?        Ssl  12월18   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     167067  0.0  0.0  17968  9640 pts/1    R+   00:14   0:00 python tools/train.py configs/ntu60_xsub/bm.py --validate --test-last --test-best
+---
+2025-12-19 00:14:48
+root        1506  0.0  0.0 113568    12 ?        Ssl  12월18   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     167067  126  6.6 11398624 2188484 pts/1 Rl+ 00:14   0:06 python tools/train.py configs/ntu60_xsub/bm.py --validate --test-last --test-best
+---
+2025-12-19 00:14:53
+root        1506  0.0  0.0 113568    12 ?        Ssl  12월18   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     167067  113 23.0 18960608 7532228 pts/1 Rl+ 00:14   0:11 python tools/train.py configs/ntu60_xsub/bm.py --validate --test-last --test-best
+---
+2025-12-19 00:14:58
+root        1506  0.0  0.0 113568    12 ?        Ssl  12월18   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     167067 88.9 23.9 19294800 7838304 pts/1 Rl+ 00:14   0:13 python tools/train.py configs/ntu60_xsub/bm.py --validate --test-last --test-best
+eunji     167257  220  1.1 9418456 391948 pts/3  Rl+  00:14   0:02 python tools/train.py configs/ntu60_xsub/bm.py --validate --test-last --test-best
+---
+2025-12-19 00:15:03
+root        1506  0.0  0.0 113568    12 ?        Ssl  12월18   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     167067 80.0 22.0 18664024 7215948 pts/1 Sl+ 00:14   0:16 python tools/train.py configs/ntu60_xsub/bm.py --validate --test-last --test-best
+eunji     167326 13.2  0.0  19332 11252 pts/1    S+   00:15   0:00 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.semaphore_tracker import main;main(59)
+eunji     167350  100  0.7 3722632 258160 pts/1  R+   00:15   0:00 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=60, pipe_handle=64) --multiprocessing-fork
+---
+2025-12-19 00:15:05
+root        1506  0.0  0.0 113568    12 ?        Ssl  12월18   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     167067 74.3 22.0 18664036 7216008 pts/1 Sl+ 00:14   0:16 python tools/train.py configs/ntu60_xsub/bm.py --validate --test-last --test-best
+eunji     167326  3.6  0.0  19332 11252 pts/1    S+   00:15   0:00 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.semaphore_tracker import main;main(59)
+eunji     167350  104  0.0      0     0 pts/1    Zl+  00:15   0:02 [python] <defunct>
+eunji     167407  100  1.0 8407100 356808 pts/1  Rl+  00:15   0:00 /home/eunji/anaconda3/envs/protogcn/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=60, pipe_handle=67) --multiprocessing-fork
+---
+2025-12-19 00:15:06
+root        1506  0.0  0.0 113568    12 ?        Ssl  12월18   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     167067 74.9  0.0      0     0 pts/1    Zl+  00:14   0:17 [python] <defunct>
+---
