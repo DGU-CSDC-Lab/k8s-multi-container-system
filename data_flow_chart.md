@@ -166,7 +166,7 @@ flowchart TD
     CPU_METRICS --> THRESHOLD_CHECK
     MEM_METRICS --> THRESHOLD_CHECK
     
-    THRESHOLD_CHECK --> GPU_OK{"GPU Memory Free > 2GB
+    THRESHOLD_CHECK --> GPU_OK{"GPU Memory Free > 200MB
     AND GPU Util < 80%"}
     THRESHOLD_CHECK --> CPU_OK{CPU Usage < 90%}
     THRESHOLD_CHECK --> MEM_OK{Memory Usage < 85%}
