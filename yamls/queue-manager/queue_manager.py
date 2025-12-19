@@ -1,57 +1,54 @@
 #!/usr/bin/env python3
 import json
 import time
-import requests
+import redis
+import subprocess
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from threading import Thread
-import subprocess
 
-class JobQueue:
+class RedisJobQueue:
     def __init__(self):
-        self.queue = []
-        self.running_jobs = {}
+        self.redis_client = redis.Redis(host='redis', port=6379, decode_responses=True)
+        self.queue_key = 'job_queue'
+        self.running_key = 'running_jobs'
     
     def add_job(self, job):
         job['timestamp'] = time.time()
         job['status'] = 'queued'
-        self.queue.append(job)
-        print(f"Job added to queue: {job['user']}")
+        self.redis_client.lpush(self.queue_key, json.dumps(job))
+        print(f"Job added to Redis queue: {job['user']}")
     
     def get_next_job(self):
-        if self.queue:
-            return self.queue.pop(0)
+        job_data = self.redis_client.rpop(self.queue_key)
+        if job_data:
+            job = json.loads(job_data)
+            self.redis_client.hset(self.running_key, job['user'], json.dumps(job))
+            return job
         return None
     
-    def check_resources(self):
-        try:
-            response = requests.get('http://resource-monitor:8080/status', timeout=5)
-            return response.json().get('available', False)
-        except:
-            return False
+    def complete_job(self, user):
+        self.redis_client.hdel(self.running_key, user)
     
-    def submit_workflow(self, job):
-        cmd = [
-            'argo', 'submit', '/workflows/proto-gcn-workflow.yaml',
-            '-n', 'argo',
-            '--serviceaccount', 'argo-server',
-            '-p', f"user={job['user']}",
-            '-p', f"config-file={job['config_file']}",
-            '-p', f"ann-file={job['ann_file']}",
-            '-p', f"work-dir={job['work_dir']}"
-        ]
+    def get_status(self):
+        queue_length = self.redis_client.llen(self.queue_key)
+        running_jobs = self.redis_client.hlen(self.running_key)
+        queued_jobs = []
         
-        result = subprocess.run(cmd, capture_output=True, text=True)
-        if result.returncode == 0:
-            workflow_name = result.stdout.strip().split()[-1]
-            self.running_jobs[workflow_name] = job
-            print(f"Workflow submitted: {workflow_name} for user {job['user']}")
-            return workflow_name
-        else:
-            print(f"Failed to submit workflow: {result.stderr}")
-            return None
+        # 큐에 있는 작업들 조회
+        for i in range(min(queue_length, 10)):  # 최대 10개만
+            job_data = self.redis_client.lindex(self.queue_key, i)
+            if job_data:
+                job = json.loads(job_data)
+                queued_jobs.append({'user': job['user'], 'timestamp': job['timestamp']})
+        
+        return {
+            'queue_length': queue_length,
+            'running_jobs': running_jobs,
+            'queued_jobs': queued_jobs
+        }
 
 class QueueHandler(BaseHTTPRequestHandler):
-    queue = JobQueue()
+    queue = None
     
     def do_POST(self):
         if self.path == '/submit':
@@ -68,11 +65,7 @@ class QueueHandler(BaseHTTPRequestHandler):
     
     def do_GET(self):
         if self.path == '/status':
-            status = {
-                'queue_length': len(self.queue.queue),
-                'running_jobs': len(self.queue.running_jobs),
-                'queued_jobs': [{'user': job['user'], 'timestamp': job['timestamp']} for job in self.queue.queue]
-            }
+            status = self.queue.get_status()
             
             self.send_response(200)
             self.send_header('Content-type', 'application/json')
@@ -80,24 +73,54 @@ class QueueHandler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(status).encode())
 
 def scheduler_loop(queue):
-    print("Scheduler started")
+    print("Redis Scheduler started")
     while True:
-        print(f"Checking resources... Queue length: {len(queue.queue)}")
-        if queue.check_resources():
-            print("Resources available")
-            job = queue.get_next_job()
-            if job:
-                print(f"Submitting job for user: {job['user']}")
-                queue.submit_workflow(job)
-        time.sleep(10)
+        try:
+            # GPU 사용 가능한지 확인
+            running_jobs = queue.redis_client.hlen('running_jobs')
+            if running_jobs == 0:  # GPU 사용 가능
+                job = queue.get_next_job()
+                if job:
+                    print(f"Processing job for user: {job['user']}")
+                    
+                    # Argo Workflow 실행
+                    cmd = [
+                        'argo', 'submit', '/workflows/proto-gcn-workflow.yaml',
+                        '-n', 'argo',
+                        '--serviceaccount', 'argo-server',
+                        '-p', f"user={job['user']}",
+                        '-p', f"data-url={job.get('data_url', 'dummy')}",
+                        '-p', f"config-file={job['config_file']}",
+                        '-p', f"work-dir={job['work_dir']}"
+                    ]
+                    
+                    result = subprocess.run(cmd, capture_output=True, text=True)
+                    if result.returncode == 0:
+                        print(f"Workflow submitted successfully for {job['user']}")
+                    else:
+                        print(f"Workflow submission failed: {result.stderr}")
+                        queue.complete_job(job['user'])  # 실패시 running에서 제거
+            
+            time.sleep(5)
+        except Exception as e:
+            print(f"Scheduler error: {e}")
+            time.sleep(10)
 
 if __name__ == '__main__':
-    print("=== Queue Manager Starting ===")
-    queue = JobQueue()
-    print("JobQueue created")
+    print("=== Redis Queue Manager Starting ===")
+    
+    # Redis 연결 대기
+    while True:
+        try:
+            queue = RedisJobQueue()
+            queue.redis_client.ping()
+            print("Redis connection established")
+            break
+        except Exception as e:
+            print(f"Waiting for Redis... {e}")
+            time.sleep(5)
     
     # 스케줄러 스레드 시작
-    print("Starting scheduler thread...")
     scheduler_thread = Thread(target=scheduler_loop, args=(queue,))
     scheduler_thread.daemon = True
     scheduler_thread.start()
@@ -106,5 +129,5 @@ if __name__ == '__main__':
     # HTTP 서버 시작
     QueueHandler.queue = queue
     server = HTTPServer(('0.0.0.0', 8081), QueueHandler)
-    print('Queue manager started on port 8081')
+    print('Redis Queue manager started on port 8081')
     server.serve_forever()

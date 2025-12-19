@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y curl && \
 
 RUN pip install requests redis
 
-COPY queue_manager_redis.py /app/queue_manager.py
+COPY queue_manager.py /app/queue_manager.py
 WORKDIR /app
 
 EXPOSE 8081
