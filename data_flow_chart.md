@@ -182,18 +182,6 @@ flowchart TD
     
     AND_GATE -->|Yes| AVAILABLE[available: true]
     AND_GATE -->|No| NOT_AVAILABLE
-    
-    AVAILABLE --> RESPONSE_TRUE["gpu_utilization: 75
-    gpu_memory_used: 2048
-    cpu_usage: 45.0
-    memory_usage: 37.5
-    available: true"]
-    
-    NOT_AVAILABLE --> RESPONSE_FALSE["gpu_utilization: 85
-    gpu_memory_used: 8192
-    cpu_usage: 95.0
-    memory_usage: 90.0
-    available: false"]
 ```
 
 ## 4단계: 워크플로 생성
