@@ -1,0 +1,59 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: proto-gcn-
+spec:
+  entrypoint: train-model
+  arguments:
+    parameters:
+    - name: user
+    - name: data-url
+    - name: config-file
+    - name: work-dir
+  templates:
+  - name: train-model
+    container:
+      image: proto-gcn:latest
+      imagePullPolicy: Never
+      command: ["/bin/bash", "-c"]
+      args:
+      - |
+        set -e
+        echo "=== Proto-GCN 학습 시작 ==="
+        echo "사용자: {{workflow.parameters.user}}"
+        
+        # 환경변수 설정 (메모리 제한)
+        export ANN_FILE="/workspace/data/nturgbd/ntu60_3danno.pkl"
+        export CONFIG_FILE="{{workflow.parameters.config-file}}"
+        export WORK_DIR="{{workflow.parameters.work-dir}}"
+        export RANK=0 WORLD_SIZE=1 LOCAL_RANK=0
+        
+        mkdir -p "{{workflow.parameters.work-dir}}"
+        
+        echo "=== GPU 정보 확인 ==="
+        nvidia-smi
+        
+        echo "=== 데이터 파일 확인 ==="
+        ls -la /workspace/data/nturgbd/
+        
+        echo "=== 실제 Proto-GCN 학습 시작 ==="
+        echo "CONFIG_FILE: $CONFIG_FILE"
+        echo "ANN_FILE: $ANN_FILE"
+        echo "WORK_DIR: $WORK_DIR"
+        
+        # 실제 Proto-GCN 학습 실행
+        python3 tools/train.py configs/ntu60_xsub/bm.py --validate --test-last --test-best
+      resources:
+        requests:
+          nvidia.com/gpu: 1
+          memory: "16Gi"
+        limits:
+          nvidia.com/gpu: 1
+          memory: "24Gi"
+      volumeMounts:
+      - name: data-volume
+        mountPath: /workspace/data
+    volumes:
+    - name: data-volume
+      hostPath:
+        path: /home/eunji/Desktop/project/k8s-multi-container-system/proto-gcn/data

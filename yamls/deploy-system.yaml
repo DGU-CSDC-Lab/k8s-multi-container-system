@@ -1,0 +1,171 @@
+# Redis Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+  namespace: argo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      containers:
+      - name: redis
+        image: redis:7-alpine
+        ports:
+        - containerPort: 6379
+---
+# Redis Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+  namespace: argo
+spec:
+  selector:
+    app: redis
+  ports:
+  - port: 6379
+    targetPort: 6379
+---
+# 리소스 모니터 DaemonSet
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: resource-monitor
+  namespace: argo
+spec:
+  selector:
+    matchLabels:
+      app: resource-monitor
+  template:
+    metadata:
+      labels:
+        app: resource-monitor
+    spec:
+      containers:
+      - name: monitor
+        image: resource-monitor:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "200m"
+---
+# 리소스 모니터 서비스
+apiVersion: v1
+kind: Service
+metadata:
+  name: resource-monitor
+  namespace: argo
+spec:
+  selector:
+    app: resource-monitor
+  ports:
+  - port: 8080
+    targetPort: 8080
+---
+# 큐 매니저 Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: queue-manager
+  namespace: argo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: queue-manager
+  template:
+    metadata:
+      labels:
+        app: queue-manager
+    spec:
+      serviceAccountName: argo-server
+      containers:
+      - name: queue-manager
+        image: queue-manager:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8081
+        volumeMounts:
+        - name: workflow-templates
+          mountPath: /workflows
+      volumes:
+      - name: workflow-templates
+        configMap:
+          name: workflow-templates
+---
+# 큐 매니저 서비스
+apiVersion: v1
+kind: Service
+metadata:
+  name: queue-manager
+  namespace: argo
+spec:
+  selector:
+    app: queue-manager
+  ports:
+  - port: 8081
+    targetPort: 8081
+  type: NodePort
+---
+# 워크플로 템플릿 ConfigMap
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: workflow-templates
+  namespace: argo
+data:
+  proto-gcn-workflow.yaml: |
+    apiVersion: argoproj.io/v1alpha1
+    kind: Workflow
+    metadata:
+      generateName: proto-gcn-
+    spec:
+      entrypoint: train-model
+      arguments:
+        parameters:
+        - name: user
+        - name: data-url
+        - name: config-file
+        - name: work-dir
+      templates:
+      - name: train-model
+        container:
+          image: proto-gcn:latest
+          command: ["/bin/bash", "-c"]
+          args:
+          - |
+            set -e
+            echo "=== Proto-GCN 학습 시작 ==="
+            echo "사용자: {{workflow.parameters.user}}"
+            
+            if [[ -n "{{workflow.parameters.data-url}}" ]]; then
+              wget "{{workflow.parameters.data-url}}" -O /workspace/data/custom_dataset.pkl
+              export ANN_FILE="/workspace/data/custom_dataset.pkl"
+            fi
+            
+            export CONFIG_FILE="{{workflow.parameters.config-file}}"
+            export WORK_DIR="{{workflow.parameters.work-dir}}"
+            export RANK=0 WORLD_SIZE=1 LOCAL_RANK=0
+            
+            mkdir -p "{{workflow.parameters.work-dir}}"
+            python3 tools/train.py $CONFIG_FILE --validate --test-last --test-best
+          resources:
+            requests:
+              nvidia.com/gpu: 1
+              memory: "8Gi"
+            limits:
+              nvidia.com/gpu: 1
+              memory: "16Gi"

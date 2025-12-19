@@ -1,0 +1,14 @@
+FROM python:3.8
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+WORKDIR /workspace
+COPY . /workspace/
+
+# Install project dependencies
+RUN if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+RUN if [ -f setup.py ]; then pip install -e .; fi
+
+# Flexible entry point
+ENTRYPOINT ["/bin/bash", "-c"]
+CMD ["python auto_protogcn.py"]

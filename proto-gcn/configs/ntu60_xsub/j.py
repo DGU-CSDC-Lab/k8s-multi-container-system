@@ -12,7 +12,7 @@ model = dict(
     cls_head=dict(type='SimpleHead', joint_cfg='nturgb+d', num_classes=60, in_channels=384, weight=0.2))
 
 dataset_type = 'PoseDataset'
-ann_file = '/data/nturgbd/ntu60_3danno.pkl'
+ann_file = 'data/nturgbd/ntu60_3danno.pkl'
 train_pipeline = [
     dict(type='PreNormalize3D', align_spine=False),
     dict(type='RandomRot', theta=0.2),

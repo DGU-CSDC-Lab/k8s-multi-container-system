@@ -1,0 +1,10 @@
+timestamp, name, utilization.gpu [%], utilization.memory [%], memory.used [MiB], memory.total [MiB], temperature.gpu, power.draw [W]
+2025/12/19 00:14:26.708, NVIDIA GeForce RTX 3080, 0 %, 3 %, 389 MiB, 10240 MiB, 35, 27.23 W
+2025/12/19 00:14:27.718, NVIDIA GeForce RTX 3080, 0 %, 3 %, 392 MiB, 10240 MiB, 35, 27.42 W
+2025/12/19 00:14:28.718, NVIDIA GeForce RTX 3080, 0 %, 3 %, 392 MiB, 10240 MiB, 35, 27.60 W
+2025/12/19 00:14:29.718, NVIDIA GeForce RTX 3080, 0 %, 3 %, 392 MiB, 10240 MiB, 35, 27.63 W
+2025/12/19 00:14:30.718, NVIDIA GeForce RTX 3080, 4 %, 4 %, 392 MiB, 10240 MiB, 35, 27.48 W
+2025/12/19 00:14:31.718, NVIDIA GeForce RTX 3080, 0 %, 3 %, 392 MiB, 10240 MiB, 35, 27.32 W
+2025/12/19 00:14:32.719, NVIDIA GeForce RTX 3080, 3 %, 4 %, 1115 MiB, 10240 MiB, 36, 41.60 W
+2025/12/19 00:14:33.719, NVIDIA GeForce RTX 3080, 18 %, 0 %, 1793 MiB, 10240 MiB, 36, 88.59 W
+2025/12/19 00:14:34.719, NVIDIA GeForce RTX 3080, 15 %, 0 %, 1927 MiB, 10240 MiB, 36, 88.44 W

@@ -1,0 +1,14 @@
+# argo namespace 안에서만 admin 권한을 가집니다. (테스트 환경에서만 사용하세요)
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: argo-server-admin
+  namespace: argo
+subjects:
+- kind: ServiceAccount
+  name: argo-server
+  namespace: argo
+roleRef:
+  kind: ClusterRole
+  name: admin
+  apiGroup: rbac.authorization.k8s.io

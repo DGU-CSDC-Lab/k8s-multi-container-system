@@ -10,20 +10,8 @@ opencv-contrib-python
 opencv-python
 importlib_metadata
 pymemcache
+pyarrow>=10.0.0
 scipy
 torch>=1.5
 tqdm
-pandas
-
-# 추가 필수
-pyyaml
-addict
-yapf
-termcolor
-packaging
-
-# 선택적 유틸
-albumentations
-seaborn
-tensorboard
-ipython
+yapf==0.32.0

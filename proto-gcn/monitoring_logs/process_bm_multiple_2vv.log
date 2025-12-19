@@ -1,0 +1,5 @@
+2025-12-19 00:14:57
+root        1506  0.0  0.0 113568    12 ?        Ssl  12월18   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+eunji     167067 88.3 20.3 18136712 6674316 pts/1 Sl+ 00:14   0:12 python tools/train.py configs/ntu60_xsub/bm.py --validate --test-last --test-best
+eunji     167257  0.0  0.0  17324  9136 pts/3    R+   00:14   0:00 python tools/train.py configs/ntu60_xsub/bm.py --validate --test-last --test-best
+---

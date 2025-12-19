@@ -1,4 +1,8 @@
 app/__pycache__
 data/
 
-node_modules/
+app/node_modules
+
+venv/
+*/venv/
+proto-gcn/venv/

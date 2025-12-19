@@ -1,0 +1,263 @@
+%Cpu:  3.7 us,  2.3 sy,  0.0 ni, 91.6 id,  2.3 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0  250948  53468  24532 R  45.5   0.2   0:00.11 python
+%Cpu:  4.7 us,  1.2 sy,  0.0 ni, 92.6 id,  1.6 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0 8320992 321732 183592 R  70.0   1.0   0:00.81 python
+%Cpu:  7.8 us,  7.2 sy,  0.0 ni, 84.1 id,  0.9 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0 9732728 416580 230988 R 217.8   1.3   0:03.01 python
+%Cpu:  6.1 us,  1.4 sy,  0.0 ni, 92.3 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   14.3g   1.3g 346264 S 100.0   4.3   0:04.02 python
+%Cpu:  6.2 us,  1.3 sy,  0.0 ni, 92.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   14.3g   2.4g 470748 S  99.0   7.6   0:05.02 python
+%Cpu:  7.3 us,  1.2 sy,  0.0 ni, 91.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   17.0g   3.5g 601596 S 102.0  11.1   0:06.04 python
+%Cpu:  6.7 us,  1.2 sy,  0.0 ni, 92.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   17.0g   4.5g 728124 S 100.0  14.5   0:07.05 python
+%Cpu:  6.5 us,  1.1 sy,  0.0 ni, 92.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   19.7g   5.6g 860280 S 100.0  17.9   0:08.06 python
+%Cpu:  5.7 us,  1.0 sy,  0.0 ni, 93.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   19.7g   6.7g 987836 S 101.0  21.4   0:09.07 python
+%Cpu:  8.0 us,  1.3 sy,  0.0 ni, 90.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   22.3g   7.7g   1.1g S 100.0  24.8   0:10.08 python
+%Cpu:  6.5 us,  1.2 sy,  0.0 ni, 92.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   22.3g   8.8g   1.2g S 100.0  28.3   0:11.09 python
+%Cpu:  5.8 us,  1.0 sy,  0.0 ni, 93.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   24.8g   9.9g   1.3g S 100.0  31.7   0:12.10 python
+%Cpu:  7.0 us,  1.0 sy,  0.0 ni, 91.6 id,  0.3 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   24.8g  11.0g   1.4g S 101.0  35.1   0:13.11 python
+%Cpu:  7.0 us,  1.7 sy,  0.0 ni, 91.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   23.8g  10.7g 234844 R 100.0  34.3   0:14.12 python
+%Cpu:  5.1 us,  2.1 sy,  0.0 ni, 92.5 id,  0.3 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   24.4g  10.8g 334632 D  84.2  34.8   0:14.97 python
+%Cpu:  3.1 us,  5.4 sy,  0.0 ni, 90.8 id,  0.6 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   25.5g   5.6g 438672 D 132.7  17.9   0:16.31 python
+%Cpu:  4.9 us,  2.2 sy,  0.0 ni, 92.2 id,  0.7 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   27.3g   2.5g 594492 R  86.1   7.9   0:17.18 python
+%Cpu:  3.6 us,  1.6 sy,  0.0 ni, 94.0 id,  0.8 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   33.4g   3.7g 817340 S  86.0  12.0   0:18.04 python
+%Cpu:  7.0 us,  1.0 sy,  0.0 ni, 91.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   33.4g   4.8g 946300 S 100.0  15.5   0:19.05 python
+%Cpu:  6.7 us,  1.3 sy,  0.0 ni, 92.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   33.4g   5.9g   1.0g S 100.0  19.0   0:20.06 python
+%Cpu:  4.7 us,  1.1 sy,  0.0 ni, 94.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   35.9g   7.0g   1.2g S 101.0  22.6   0:21.08 python
+%Cpu:  5.0 us,  0.9 sy,  0.0 ni, 94.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   35.9g   8.1g   1.3g S 101.0  26.1   0:22.09 python
+%Cpu:  7.0 us,  1.1 sy,  0.0 ni, 91.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   38.4g   9.2g   1.4g S 101.0  29.5   0:23.11 python
+%Cpu:  7.3 us,  1.1 sy,  0.0 ni, 91.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   38.4g  10.3g   1.5g S  99.0  33.0   0:24.11 python
+%Cpu:  7.7 us,  1.1 sy,  0.0 ni, 91.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   38.4g  11.4g   1.7g S 102.0  36.6   0:25.13 python
+%Cpu:  7.8 us,  1.1 sy,  0.0 ni, 91.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   38.4g  12.5g   1.8g S 100.0  40.1   0:26.14 python
+%Cpu:  8.7 us,  1.1 sy,  0.0 ni, 90.1 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   40.9g  13.6g   1.9g S 100.0  43.6   0:27.15 python
+%Cpu:  7.2 us,  1.2 sy,  0.0 ni, 91.5 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   40.9g  14.7g   2.0g S 101.0  47.0   0:28.17 python
+%Cpu:  5.4 us,  1.5 sy,  0.0 ni, 93.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   39.6g  12.0g 809700 R 101.0  38.5   0:29.18 python
+%Cpu:  5.6 us,  0.9 sy,  0.0 ni, 93.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   39.7g  11.8g 809992 S  28.7  37.7   0:29.47 python
+%Cpu:  6.0 us,  4.9 sy,  0.0 ni, 89.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   39.7g   3.8g 809992 S  84.5  12.0   0:30.34 python
+%Cpu:  7.2 us,  1.0 sy,  0.0 ni, 91.7 id,  0.2 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   39.7g   3.7g 809992 S   1.0  12.0   0:30.35 python
+%Cpu:  8.8 us,  1.2 sy,  0.0 ni, 89.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   43.5g   4.5g 908192 S  76.2  14.6   0:31.12 python
+%Cpu:  7.3 us,  1.2 sy,  0.0 ni, 91.3 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   43.5g   5.6g   1.0g S 100.0  18.0   0:32.13 python
+%Cpu:  6.8 us,  1.3 sy,  0.0 ni, 91.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   46.0g   6.7g   1.1g S 103.0  21.5   0:33.16 python
+%Cpu:  6.5 us,  1.4 sy,  0.0 ni, 92.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   46.0g   7.8g   1.2g S 100.0  24.9   0:34.17 python
+%Cpu:  6.5 us,  1.3 sy,  0.0 ni, 92.0 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   46.0g   8.9g   1.4g S 100.0  28.4   0:35.18 python
+%Cpu:  7.9 us,  1.2 sy,  0.0 ni, 90.8 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   46.0g  10.0g   1.5g S 102.0  31.9   0:36.20 python
+%Cpu:  7.0 us,  1.2 sy,  0.0 ni, 91.6 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   49.0g  11.1g   1.6g S 102.0  35.4   0:37.23 python
+%Cpu:  8.7 us,  1.2 sy,  0.0 ni, 90.0 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   49.0g  12.1g   1.7g S  99.0  38.9   0:38.23 python
+%Cpu:  8.2 us,  1.3 sy,  0.0 ni, 90.4 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   52.0g  13.2g   1.9g S 102.1  42.2   0:39.21 python
+%Cpu: 15.2 us,  3.0 sy,  0.0 ni, 81.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   52.0g  13.2g   1.9g S 100.0  42.3   0:39.24 python
+%Cpu: 11.8 us,  2.9 sy,  0.0 ni, 85.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   52.0g  13.2g   1.9g S 133.3  42.5   0:39.28 python
+%Cpu: 13.8 us,  3.4 sy,  0.0 ni, 79.3 id,  3.4 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   52.0g  13.3g   1.9g S  50.0  42.5   0:39.29 python
+%Cpu: 36.8 us,  2.6 sy,  0.0 ni, 60.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   52.0g  13.3g   1.9g S 100.0  42.6   0:39.32 python
+%Cpu: 23.8 us,  2.4 sy,  0.0 ni, 73.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   52.0g  13.3g   1.9g S 100.0  42.7   0:39.35 python
+%Cpu: 14.5 us,  1.7 sy,  0.0 ni, 83.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   52.0g  13.4g   1.9g S  83.3  42.9   0:39.40 python
+%Cpu: 10.3 us,  1.2 sy,  0.0 ni, 88.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   52.0g  14.4g   2.0g S 101.0  46.3   0:40.42 python
+%Cpu:  8.1 us,  1.5 sy,  0.0 ni, 90.1 id,  0.2 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   50.7g  14.0g 809992 R 101.0  44.7   0:41.43 python
+%Cpu:  4.9 us,  0.7 sy,  0.0 ni, 94.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   50.7g  13.9g 809992 S  27.7  44.7   0:41.71 python
+%Cpu:  3.4 us,  6.6 sy,  0.0 ni, 90.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   50.7g   4.5g 809992 S 119.8  14.5   0:42.92 python
+%Cpu:  4.7 us,  1.1 sy,  0.0 ni, 94.0 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   52.0g   4.6g 909392 S  79.2  14.6   0:43.72 python
+%Cpu:  4.3 us,  1.2 sy,  0.0 ni, 94.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   52.0g   5.7g   1.0g S 101.0  18.1   0:44.74 python
+%Cpu:  4.7 us,  1.1 sy,  0.0 ni, 94.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   54.5g   6.8g   1.1g S 100.0  21.7   0:45.75 python
+%Cpu:  5.0 us,  1.4 sy,  0.0 ni, 93.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   54.5g   7.9g   1.2g S 101.0  25.2   0:46.76 python
+%Cpu:  4.3 us,  0.9 sy,  0.0 ni, 94.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   57.0g   9.0g   1.4g S 100.0  28.8   0:47.77 python
+%Cpu:  4.3 us,  1.0 sy,  0.0 ni, 94.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   57.0g  10.1g   1.5g S 100.0  32.3   0:48.78 python
+%Cpu:  4.4 us,  1.1 sy,  0.0 ni, 94.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   57.0g  11.2g   1.6g S 101.0  35.9   0:49.80 python
+%Cpu:  4.3 us,  0.9 sy,  0.0 ni, 94.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   57.0g  12.3g   1.8g S 101.0  39.4   0:50.81 python
+%Cpu:  4.6 us,  1.1 sy,  0.0 ni, 94.2 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   57.0g  13.4g   1.9g S 100.0  43.0   0:51.82 python
+%Cpu:  5.3 us,  0.9 sy,  0.0 ni, 93.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   57.0g  14.5g   2.0g S 100.0  46.5   0:52.83 python
+%Cpu: 11.9 us,  1.7 sy,  0.0 ni, 86.1 id,  0.3 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   56.9g  14.3g 869668 R 264.4  46.0   0:55.50 python
+%Cpu: 27.8 us,  1.4 sy,  0.0 ni, 70.1 id,  0.7 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976048 R 565.0  47.6   1:01.15 python
+%Cpu: 50.4 us,  1.1 sy,  0.0 ni, 48.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R 999.0  47.6   1:11.24 python
+%Cpu: 50.4 us,  1.2 sy,  0.0 ni, 48.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R 999.0  47.6   1:21.33 python
+%Cpu: 51.3 us,  1.0 sy,  0.0 ni, 47.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R 999.0  47.6   1:31.42 python
+%Cpu: 50.3 us,  1.1 sy,  0.0 ni, 48.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1000  47.6   1:41.52 python
+%Cpu: 50.3 us,  1.0 sy,  0.0 ni, 48.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1000  47.6   1:51.62 python
+%Cpu: 51.4 us,  1.3 sy,  0.0 ni, 47.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R 999.0  47.6   2:01.71 python
+%Cpu: 50.7 us,  1.3 sy,  0.0 ni, 47.9 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R 999.0  47.6   2:11.80 python
+%Cpu: 50.4 us,  1.1 sy,  0.0 ni, 48.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1000  47.6   2:21.90 python
+%Cpu: 50.5 us,  1.2 sy,  0.0 ni, 48.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R 999.0  47.6   2:31.99 python
+%Cpu: 50.4 us,  1.1 sy,  0.0 ni, 48.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1001  47.6   2:42.10 python
+%Cpu: 51.4 us,  1.1 sy,  0.0 ni, 47.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1001  47.6   2:52.21 python
+%Cpu: 50.5 us,  1.1 sy,  0.0 ni, 48.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1001  47.6   3:02.32 python
+%Cpu: 50.3 us,  1.0 sy,  0.0 ni, 48.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1002  47.6   3:12.44 python
+%Cpu: 51.6 us,  1.5 sy,  0.0 ni, 46.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1000  47.6   3:22.54 python
+%Cpu: 51.4 us,  1.0 sy,  0.0 ni, 47.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1001  47.6   3:32.65 python
+%Cpu: 50.4 us,  1.3 sy,  0.0 ni, 48.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1001  47.6   3:42.76 python
+%Cpu: 50.4 us,  1.1 sy,  0.0 ni, 48.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1003  47.6   3:52.89 python
+%Cpu: 53.8 us,  1.2 sy,  0.0 ni, 44.9 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R 992.2  47.6   4:03.01 python
+%Cpu: 50.2 us,  1.2 sy,  0.0 ni, 48.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1002  47.6   4:13.13 python
+%Cpu: 50.2 us,  1.2 sy,  0.0 ni, 48.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1000  47.6   4:23.23 python
+%Cpu: 51.4 us,  1.1 sy,  0.0 ni, 47.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1002  47.6   4:33.35 python
+%Cpu: 50.4 us,  1.3 sy,  0.0 ni, 48.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1001  47.6   4:43.46 python
+%Cpu: 50.3 us,  1.0 sy,  0.0 ni, 48.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1000  47.6   4:53.56 python
+%Cpu: 50.5 us,  1.0 sy,  0.0 ni, 48.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1001  47.6   5:03.67 python
+%Cpu: 50.5 us,  0.9 sy,  0.0 ni, 48.5 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1001  47.6   5:13.78 python
+%Cpu: 52.2 us,  1.1 sy,  0.0 ni, 46.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1002  47.6   5:23.90 python
+%Cpu: 50.6 us,  1.3 sy,  0.0 ni, 48.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R 992.2  47.6   5:34.02 python
+%Cpu: 53.0 us,  1.2 sy,  0.0 ni, 45.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1000  47.6   5:44.12 python
+%Cpu: 50.4 us,  1.3 sy,  0.0 ni, 48.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R 999.0  47.6   5:54.21 python
+%Cpu: 51.0 us,  1.1 sy,  0.0 ni, 47.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R 999.0  47.6   6:04.30 python
+%Cpu: 50.4 us,  1.2 sy,  0.0 ni, 48.2 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.4g  14.9g 976112 R  1010  47.6   6:14.40 python
+%Cpu: 23.4 us,  1.2 sy,  0.0 ni, 75.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 S 399.0  47.7   6:18.43 python
+%Cpu:  3.9 us,  0.5 sy,  0.0 ni, 95.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 S   1.9  47.7   6:18.45 python
+%Cpu: 30.2 us,  1.1 sy,  0.0 ni, 68.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 556.4  47.7   6:24.07 python
+%Cpu: 50.3 us,  1.0 sy,  0.0 ni, 48.5 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 999.0  47.7   6:34.16 python
+%Cpu: 53.1 us,  1.5 sy,  0.0 ni, 45.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1001  47.7   6:44.27 python
+%Cpu: 50.6 us,  1.2 sy,  0.0 ni, 47.8 id,  0.3 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1009  47.7   6:54.36 python
+%Cpu: 51.4 us,  1.3 sy,  0.0 ni, 47.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1000  47.7   7:04.46 python
+%Cpu: 50.7 us,  1.0 sy,  0.0 ni, 48.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 999.0  47.7   7:14.55 python
+%Cpu: 51.8 us,  1.1 sy,  0.0 ni, 47.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 990.0  47.7   7:18.51 python
+%Cpu: 55.8 us,  3.8 sy,  0.0 ni, 40.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1300  47.7   7:18.77 python
+%Cpu: 59.5 us,  2.7 sy,  0.0 ni, 37.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 900.0  47.7   7:18.95 python
+%Cpu: 58.3 us,  2.1 sy,  0.0 ni, 39.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 800.0  47.7   7:19.19 python
+%Cpu: 57.1 us,  5.7 sy,  0.0 ni, 37.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 900.0  47.7   7:19.37 python
+%Cpu: 58.3 us,  2.1 sy,  0.0 ni, 39.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1200  47.7   7:19.61 python
+%Cpu: 58.1 us,  2.3 sy,  0.0 ni, 39.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1100  47.7   7:19.83 python
+%Cpu: 60.0 us,  2.5 sy,  0.0 ni, 37.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1000  47.7   7:20.03 python
+%Cpu: 70.6 us,  2.5 sy,  0.0 ni, 26.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1000  47.7   7:20.63 python
+%Cpu: 53.0 us,  1.3 sy,  0.0 ni, 45.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 999.0  47.7   7:30.72 python
+%Cpu: 51.3 us,  1.3 sy,  0.0 ni, 47.3 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 999.0  47.7   7:40.81 python
+%Cpu: 50.7 us,  1.1 sy,  0.0 ni, 48.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1000  47.7   7:50.91 python
+%Cpu: 50.3 us,  1.1 sy,  0.0 ni, 48.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 998.0  47.7   8:00.99 python
+%Cpu: 51.4 us,  1.0 sy,  0.0 ni, 47.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1000  47.7   8:11.09 python
+%Cpu: 50.4 us,  1.2 sy,  0.0 ni, 48.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 999.0  47.7   8:21.18 python
+%Cpu: 50.7 us,  1.1 sy,  0.0 ni, 48.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1009  47.7   8:31.27 python
+%Cpu: 50.5 us,  1.2 sy,  0.0 ni, 48.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1000  47.7   8:41.37 python
+%Cpu: 51.2 us,  1.2 sy,  0.0 ni, 47.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 999.0  47.7   8:51.46 python
+%Cpu: 50.9 us,  0.9 sy,  0.0 ni, 48.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1000  47.7   9:01.56 python
+%Cpu: 52.3 us,  1.4 sy,  0.0 ni, 46.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 999.0  47.7   9:11.65 python
+%Cpu: 50.9 us,  1.6 sy,  0.0 ni, 47.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 998.0  47.7   9:21.73 python
+%Cpu: 50.6 us,  1.1 sy,  0.0 ni, 48.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1000  47.7   9:31.83 python
+%Cpu: 51.1 us,  1.2 sy,  0.0 ni, 47.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 998.6  47.7   9:39.12 python
+%Cpu: 55.1 us,  4.1 sy,  0.0 ni, 40.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1250  47.7   9:39.37 python
+%Cpu: 56.1 us,  3.5 sy,  0.0 ni, 40.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 966.7  47.7   9:39.66 python
+%Cpu: 59.0 us,  2.6 sy,  0.0 ni, 38.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 950.0  47.7   9:39.85 python
+%Cpu: 58.5 us,  1.9 sy,  0.0 ni, 39.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 900.0  47.7   9:40.12 python
+%Cpu: 57.9 us,  2.6 sy,  0.0 ni, 39.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R 950.0  47.7   9:40.31 python
+%Cpu: 57.7 us,  1.9 sy,  0.0 ni, 40.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+  53565 eunji     20   0   58.5g  14.9g 976164 R  1300  47.7   9:40.57 python
+%Cpu: 82.6 us,  4.3 sy,  0.0 ni, 13.0 id,  0
