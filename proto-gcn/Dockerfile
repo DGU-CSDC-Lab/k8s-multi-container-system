@@ -30,6 +30,9 @@ RUN pip install -e .
 
 ENV MASTER_ADDR=localhost
 ENV MASTER_PORT=12357
+ENV RANK=0
+ENV WORLD_SIZE=1
+ENV LOCAL_RANK=0
 ENV CONFIG_FILE=configs/ntu60_xsub/bm.py
 ENV ANN_FILE=data/nturgbd/ntu60_3danno.pkl
 ENV WORK_DIR=./work_dirs/ntu60_xsub/bm

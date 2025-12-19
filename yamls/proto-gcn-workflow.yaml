@@ -22,12 +22,11 @@ spec:
         echo "=== Proto-GCN 학습 시작 ==="
         echo "사용자: {{workflow.parameters.user}}"
         
-        # 환경변수 설정
+        # 환경변수 설정 (메모리 제한)
         export ANN_FILE="/workspace/data/nturgbd/ntu60_3danno.pkl"
         export CONFIG_FILE="{{workflow.parameters.config-file}}"
         export WORK_DIR="{{workflow.parameters.work-dir}}"
         export RANK=0 WORLD_SIZE=1 LOCAL_RANK=0
-        export PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:64
         
         mkdir -p "{{workflow.parameters.work-dir}}"
         
@@ -47,10 +46,10 @@ spec:
       resources:
         requests:
           nvidia.com/gpu: 1
-          memory: "8Gi"
+          memory: "16Gi"
         limits:
           nvidia.com/gpu: 1
-          memory: "16Gi"
+          memory: "24Gi"
       volumeMounts:
       - name: data-volume
         mountPath: /workspace/data
