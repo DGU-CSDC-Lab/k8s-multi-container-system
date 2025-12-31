@@ -6,3 +6,7 @@ app/node_modules
 venv/
 */venv/
 proto-gcn/venv/
+
+*/.env.*
+*/.env
+!*/.env.example
