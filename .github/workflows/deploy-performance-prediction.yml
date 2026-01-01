@@ -1,0 +1,47 @@
+name: Deploy Performance Prediction Service to Google Container Registry
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'system/performance-prediction-service/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'system/performance-prediction-service/**'
+env:
+  PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+  REGION: asia-northeast3
+  REPOSITORY: k8s-multi-container-system
+  IMAGE: performance-prediction-service   # ← 명확히 지정
+  DIRECTORY: system
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Authenticate to GCP
+      uses: google-github-actions/setup-gcloud@v1
+      with:
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        project_id: ${{ secrets.GCP_PROJECT_ID }}
+        export_default_credentials: true
+
+    - name: Configure Docker
+      run: |
+        gcloud auth configure-docker ${{ env.REGION }}-docker.pkg.dev
+
+    - name: Build Docker image
+      run: |
+        docker build \
+          -t ${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.REPOSITORY }}/${{ env.IMAGE }}:${{ github.sha }} \
+          ./${{ env.DIRECTORY }}/${{ env.IMAGE }}
+
+    - name: Push Docker image
+      run: |
+        docker push \
+          ${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.REPOSITORY }}/${{ env.IMAGE }}:${{ github.sha }}
