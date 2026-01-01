@@ -15,6 +15,7 @@ env:
   REGION: asia-northeast3
   REPOSITORY: k8s-multi-container-system
   IMAGE: proto-gcn   # ← 명확히 지정
+  DIRECTORY: models
 
 jobs:
   build-and-deploy:
@@ -39,7 +40,7 @@ jobs:
       run: |
         docker build \
           -t ${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.REPOSITORY }}/${{ env.IMAGE }}:${{ github.sha }} \
-          ./models/${{ env.IMAGE }}
+          ./${{ env.DIRECTORY }}/${{ env.IMAGE }}
 
     - name: Push Docker image
       run: |
