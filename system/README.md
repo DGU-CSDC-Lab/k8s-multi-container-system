@@ -1,116 +1,92 @@
 # AI-Powered Container Analysis System
 
-## 구조
+## 빠른 시작
 
-```
-system/
-├── image-analysis-service/
-│   ├── app.py              # 이미지 분석 서비스
-│   ├── requirements.txt    # 의존성
-│   └── Dockerfile         # 컨테이너 이미지
-├── performance-prediction-service/
-│   ├── app.py              # 성능 예측 서비스  
-│   ├── requirements.txt    # 의존성
-│   └── Dockerfile         # 컨테이너 이미지
-├── run-services.sh         # 서비스 실행 스크립트
-└── test-services.py        # 테스트 스크립트
+### 1. 환경 설정
+```bash
+# 환경변수 설정 도우미 실행
+./setup-env.sh
+
+# .env 파일에서 OpenAI API 키 설정
+nano .env
+# OPENAI_API_KEY=your-actual-api-key-here
 ```
 
-## 실행 방법
-
-### 1. 서비스 시작
+### 2. 서비스 실행
 ```bash
 ./run-services.sh
 ```
 
-### 2. 테스트 실행
+### 3. 테스트
 ```bash
-python3 test-services.py
+python3 test-comprehensive.py
 ```
+
+## 환경변수 설명
+
+| 변수명 | 설명 | 기본값 |
+|--------|------|--------|
+| `OPENAI_API_KEY` | OpenAI API 키 (필수) | - |
+| `IMAGE_ANALYSIS_PORT` | 이미지 분석 서비스 포트 | 5000 |
+| `PERFORMANCE_PREDICTION_PORT` | 성능 예측 서비스 포트 | 5001 |
+| `AI_MODEL` | 사용할 AI 모델 | gpt-4o-mini |
+| `MAX_FILES_TO_ANALYZE` | 분석할 최대 파일 수 | 15 |
+| `MAX_FILE_SIZE_KB` | 파일당 최대 크기 (KB) | 5 |
+
+## 구조
+
+```
+system/
+├── .env                    # 환경변수 설정
+├── .env.example           # 환경변수 예시
+├── setup-env.sh           # 환경설정 도우미
+├── run-services.sh        # 서비스 실행
+├── test-comprehensive.py  # 포괄적 테스트
+├── image-analysis-service/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── Dockerfile
+└── performance-prediction-service/
+    ├── app.py
+    ├── requirements.txt
+    └── Dockerfile
+```
+
+## 주요 개선사항
+
+### ✅ 전체 파일시스템 스캔
+- 하드코딩된 경로 제거
+- 모든 컨테이너 구조 지원
+
+### ✅ AI 기반 중요 파일 식별
+- AI가 학습 관련 파일 자동 선별
+- 불필요한 시스템 파일 제외
+
+### ✅ 환경변수 기반 설정
+- 유연한 설정 관리
+- 프로덕션 환경 대응
+
+### ✅ 범용 모델 지원
+- ProtoGCN, ResNet, BERT, YOLO 등
+- 새로운 모델 자동 감지
 
 ## API 사용법
 
 ### Image Analysis Service (Port 5000)
 
 ```bash
-# 이미지 분석 요청
 curl -X POST http://localhost:5000/analyze \
   -H "Content-Type: application/json" \
-  -d '{
-    "image_url": "proto-gcn:latest"
-  }'
-```
-
-**응답 예시:**
-```json
-{
-  "model_info": {
-    "type": "protogcn",
-    "framework": "pytorch"
-  },
-  "training_config": {
-    "batch_size": 32,
-    "learning_rate": 0.001,
-    "epochs": 100,
-    "optimizer": "adam"
-  },
-  "data_info": {
-    "dataset": "ntu60",
-    "num_classes": 60
-  }
-}
+  -d '{"image_url": "any-model:latest"}'
 ```
 
 ### Performance Prediction Service (Port 5001)
 
 ```bash
-# 성능 예측 요청
 curl -X POST http://localhost:5001/predict \
   -H "Content-Type: application/json" \
   -d '{
-    "model_features": {
-      "model_info": {"type": "protogcn", "framework": "pytorch"},
-      "training_config": {"batch_size": 32, "epochs": 100}
-    },
-    "hardware_spec": {
-      "gpu_model": "RTX4090",
-      "gpu_memory": "24GB"
-    }
+    "model_features": {...},
+    "hardware_spec": {"gpu_model": "RTX4090"}
   }'
 ```
-
-**응답 예시:**
-```json
-{
-  "predictions": {
-    "sm_utilization": 85.2,
-    "memory_usage_mb": 4096.0,
-    "estimated_time_seconds": 7200.0
-  },
-  "confidence": 0.85,
-  "bottleneck_analysis": {
-    "compute": 85.2,
-    "memory": 16.7,
-    "io": 20.0
-  }
-}
-```
-
-## 주요 기능
-
-### Image Analysis Service
-- Docker 이미지에서 코드 파일 추출
-- Python 코드 정적 분석
-- 모델 타입 자동 감지
-- 하이퍼파라미터 추출
-
-### Performance Prediction Service  
-- GPU SM 사용률 예측
-- 메모리 사용량 예측
-- 학습 시간 예측
-- 병목 지점 분석
-
-## 확장 가능성
-- 다른 딥러닝 프레임워크 지원
-- 더 정교한 AI 분석 모델 적용
-- 실시간 성능 모니터링 연동
